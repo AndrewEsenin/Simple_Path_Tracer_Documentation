@@ -4,7 +4,7 @@ WIP
 Store Link
 
 ## Description
-Simple Path Tracer is a C++ Plugin containing a set of functions for editing and drawing paths both in the editor and in rantime. 
+Simple Path Tracer is a C++ Plugin containing a set of functions for editing and drawing paths both in the editor and in rantime.  
 The plugin also includes ready blueprint examples that show how the plugin functions can be used.
 
 To draw a path, you just need an array of points.
@@ -17,9 +17,6 @@ link
 The demo level provides many additional examples
 Before you can open a demo level you need to enable the plugin for your engine version (read more).
 You can migrate the entire level with examples or individual examples to your project using migrate (read more).
-
-A description of all plugin functions can be found here\
-A description of the Blueprint examples can be viewed here
 
 You can also check out my other Path Tracer Toolkit Asset (link)
 This Asset is a more refined, optimized and extended version of it
