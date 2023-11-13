@@ -1,4 +1,4 @@
-# Simple_Path_Tracer_Documentation
+# Simple Path Tracer Documentation
 Unreal Marketplace Link  
 YouTube  
 
@@ -60,9 +60,18 @@ You can also create it, or classes inheriting from it, during the game.
 ## Functions Description:
 The plugin includes a total of 32 functions, below is a brief description and examples of use.
 
-### GetPathData
-Calculates the data for a regular path.  
-Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the Procedural Mesh to create a path in the editor or in rantime.
+**Description of common parameters:**  
+| **parameter** | **Description**  |                                                                                                                                                                                                                                         
+|---------------|------------------|
+| PathPoints | Array of path points |
+| bLoopPath | Loops the path |
+| Thickness | Half of the line thickness |
+| Offset | Offset vertexes from the center, offset works even if the path is not closed |
+| bEnableUV | Enables UV creation, enable if you want a unique texture on the meshes of your path, not just a color |
+| ScaleUV | Scale UV on two axes, use to, for example, make dashes more frequent or sparse |
+| OffsetUV | Shifts the UV, use to move the texture to the side or away from the center of the path meshes |
+| bRemoveSeamsOnUV | Removes seams at the joints of track polygons |
+| bRectangularUV | Makes the UV of each polygon rectangular, if false UV will match the shape of the polygon |
 
 PathPoints: Array of path points  
 bLoopPath: Loops the path  
@@ -74,14 +83,18 @@ OffsetUV: Shifts the UV, use to move the texture to the side or away from the ce
 bRemoveSeamsOnUV: Removes seams at the joints of track polygons  
 bRectangularUV: Makes the UV of each polygon rectangular, if false UV will match the shape of the polygon  
 
-### GetVerticalPathData
+**GetPathData**
+Calculates the data for a regular path.  
+Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the Procedural Mesh to create a path in the editor or in rantime.
+
+**GetVerticalPathData**
 Calculates the data for a vertical path.  
 Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime.
 
 Height: height of the geometry  
 Offset: Offset the entire path vertically  
 
-### GetDottedPathData
+**GetDottedPathData**
 Calculates data for a path consisting of individual polygons. Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime
 Interval distance between polygons
 Length polygon length
