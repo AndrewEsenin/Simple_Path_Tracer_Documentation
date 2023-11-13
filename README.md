@@ -2,8 +2,8 @@
 Unreal Marketplace Link  
 YouTube  
 
-__
-__
+<br />
+<br />
 ## Description
 Simple Path Tracer is a C++ Plugin containing a set of functions for editing and drawing paths both in the editor and in rantime.  
 The plugin also includes ready blueprint examples that show how the plugin functions can be used.
