@@ -65,7 +65,7 @@ You can also create it, or classes inheriting from it, during the game.
 <br />
 <br />
 
-## Functions Description:
+## Functions Description
 The plugin includes a total of 32 functions, below is a brief description and examples of use.
 
 **Description of common parameters:**  
@@ -288,5 +288,77 @@ Used to create a color path and transparency.
 **SplitPath**  
 Divides the path into two parts, at a specified distance.  
 
-  
+<br />
+<br />
+
+## Description of Blueprint Examples  
+All examples are located in the plugin content folder.  
+Blueprints whose name starts with "BPc_" are child classes of other blueprints, there are no logic changes, only changes to the class settings (different line thickness, different materials used, etc.).  
+To find the blueprint that the BPc_ blueprint is based on, open it and click in the upper right corner:  
+
+![SPT_07](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/225b8910-8b0a-4287-8560-8ed891113333)
+
+List/**/
+
+With the playne settings, you can customize their appearance and position them to coincide with the start and end of a path or curve
+
+<br />
+<br />
+
+## Features and tips  
+**Performance**
+Performance is directly related to the number of points in your array.  
+So the sequence of function calls matters, for example it is better to trim the path first and then round the corners.   
+The sequence of functions also affects how it will look, experiment, just keep in mind that functions that add a lot of points are better called last.  
+
+**UV utilization**
+You only need to turn on UV if you want to use some texture on the path meshes, such as a dotted line. If you just use a pure color, UV is not necessary.  
+Maximum performance can be achieved by disabling UV creation.  
+UV creation significantly increases the amount of logic to be executed.  
+
+**Removing seams at texture joints**
+Seams at texture joints are UV related. There are many ways to remove seams, with their own advantages and disadvantages.   
+Enabling the "Remove Seams On UV" option should solve all problems, but with this method the texture on the path segments may be deformed, the deformation can be corrected by adding rounded corners (screenshot).    
+If "Remove Seams On UV" is enabled but "Rectangular UV" is disabled, the UV will follow the shape of the polygons, in some cases this approach gives better results. Seams can also appear if you have a Scale UV in the material other than 1.  
+
+**SPT is designed to draw the path mainly in 2D**
+The plugin can draw in 3D, but there are some peculiarities.  
+If the path points are evenly spaced (X and Y coordinates are the same) a section of the path may not be displayed or may be rotated incorrectly, to solve this problem there is a function "Fix Vertical Path Points", it automatically adds an adjustable indentation along the path to avoid this problem.  
+If you want to draw something in a different plane, you can draw a horizontal path and then just rotate the entire actor itself to the plane you want.  
+
+If you do not use the function to round corners, when the angles between two path segments are very small 
+
+If a section of the path is not displayed, it is likely that at that location in your point array, two consecutive points have the same or very close coordinates. You can fix this by using the "Merge Path Points" function, which finds and removes repeating points.
+
+If necessary you can bake the path into a single mesh, this is a much more productive solution if you want to use SPT as static objects spaced out by the drop.
+There are 2 main ways to bake a path.
+first way, you can do it through the engine function, just run for UE4: for UE5:
+The second way will bake only the path itself, without start and end placeholders, just select the SPT actor on the scene, select the procedural mesh, in its settings click and "Create Static Mesh" and choose where to save
+
+**Texture Tile**
+Sometimes you can observe such artifacts on the edges of polygons, when the texture becomes visible from the other edge of the polygon. To fix this, set the following parameters in the texture settings, this will disable texture tiling. So if this texture has been used elsewhere for tiling, it will stop repeating.
+
+**Working with arrays**
+You can also use Unreal functions to work with arrays.
+For example the Reverse function will reverse the order of the points, this can be useful if it is important at which end of the path the path starts to be drawn (for example, if you want the path to remain static when the character moves along it).
+The Remove Index function will help you to remove, for example, the first or the last point of the path, it can be useful if for some reason you don't need these points or they are in the way.
+The "Get Vector Array Average" function will help you find the geometric center among all your points.
+
+The brightness of the material can be increased or decreased by changing this parameter in the color selection: 
+
+
+**Material Optimization**
+For convenience and versatility, translucent mode and the 2 sided option are enabled by default in the materials.
+If you don't need opacity switch it to Opaque mode, this will have a positive effect on performance.
+If you are using SPT so that you never see the backside of path polygons, disable the 2 Sided option, this will also improve performance.
+
+A procedural mesh is used to visualize the pathway.
+In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor. It also has added placeholders for the start and end of the path.
+This is a regular Blueprint Actor, you can freely remove or add any of your own components to it.
+
+The data for the procedural mesh can be obtained using functions:
+
+**Use in a sequencer**
+There is a separate example for sequencer %example nym%
+
 
