@@ -65,10 +65,10 @@ You can also create it, or classes inheriting from it, during the game.
 <br />
 <br />
 
-## Functions Description
+## Functions Description  
 The plugin includes a total of 32 functions, below is a brief description and examples of use.
 
-**Description of common parameters:**  
+**Description of common parameters:**    
 | **Parameter** | **Description**  |                                                                                                                                                                                                                                         
 |---------------|------------------|
 | PathPoints | Array of path points. |
@@ -83,13 +83,13 @@ The plugin includes a total of 32 functions, below is a brief description and ex
 
 <br />
 
-**GetPathData**
+**GetPathData**  
 Calculates the data for a regular path.  
 Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the Procedural Mesh to create a path in the editor or in rantime.
 
 <br />
 
-**GetVerticalPathData**
+**GetVerticalPathData**  
 Calculates the data for a vertical path.  
 Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime.
 
@@ -100,7 +100,7 @@ Returns arrays with vertex, triangle and UV coordinates, connect these arrays to
 
 <br />
 
-**GetDottedPathData**  
+**GetDottedPathData**    
 Calculates data for a path consisting of individual polygons.    
 Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime.    
 
