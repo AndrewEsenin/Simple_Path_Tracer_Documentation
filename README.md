@@ -218,7 +218,7 @@ Function for correcting points that are vertically on top of each other (X and Y
 
 <br />
 
-**FixVerticalPathPoints**  
+**AlignPathPointsInHeight**  
 Makes the Z coordinate of all points in the path equal to the Height value.  
 Convenient if you need to align all points in a horizontal plane  
 
