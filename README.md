@@ -47,6 +47,16 @@ for UE5:
 
 Download the demo level for more examples.  
 
-Create a "Simple Path Tracer Actor" actor, or use one of the ready-made examples.
-"Simple Path Tracer Actor" contains all the functions for editing and creating a path.
-You can also create it, or classes inheriting from it, during the game.
+Create a "Simple Path Tracer Actor" actor, or use one of the ready-made examples.  
+"Simple Path Tracer Actor" contains all the functions for editing and creating a path.  
+
+![SPT_05](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5067783b-38f0-4d1b-a77f-d4a083f8d7f7)
+
+  
+You can also create it, or classes inheriting from it, during the game.  
+
+![SPT_06](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/a9567161-468e-4f83-9db1-eea010773325)
+
+
+  
+
