@@ -18,12 +18,7 @@ The demo level provides many additional examples
 Before you can open a demo level you need to enable the plugin for your engine version (read more).
 You can migrate the entire level with examples or individual examples to your project using migrate (read more).
 
-You can also check out my other Path Tracer Toolkit Asset (link)
-This Asset is a more refined, optimized and extended version of it
-Simple Path Tracer will suit you if you need a more optimized solution, for example if you need to draw many paths or with many points.
-
-The Path Tracer Toolkit includes more content and visualization materials.
-
-To summarize, Path Tracer Toolkit is more focused on visual style, while Simple Path Tracer is more focused on optimization and customization.
-If necessary, you can use both toolkits together, e.g. to use the SPT to PTT path editing functions or to use PTT to SPT path markers. 
+Path Tracer Toolkit is more focused on visual style, while Simple Path Tracer is more focused on optimization and customization.  
+Simple Path Tracer will suit you if you need a more optimized solution, for example if you need to draw many paths or with many points.  
+If necessary, you can use both toolkits together, e.g. to use the SPT to PTT path editing functions or to use PTT to SPT path markers.  
 
