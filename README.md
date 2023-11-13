@@ -18,7 +18,7 @@ The demo level provides many additional examples
 Before you can open a demo level you need to enable the plugin for your engine version (read more).
 You can migrate the entire level with examples or individual examples to your project using migrate (read more).
 
-A description of all plugin functions can be found here
+A description of all plugin functions can be found here\
 A description of the Blueprint examples can be viewed here
 
 You can also check out my other Path Tracer Toolkit Asset (link)
