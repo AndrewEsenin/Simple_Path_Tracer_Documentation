@@ -6,7 +6,7 @@ YouTube
 <br />
 
 ## Description
-Simple Path Tracer is a C++ Plugin containing a set of functions for editing and drawing paths both in the editor and in rantime.  
+Simple Path Tracer is a C++ Plugin containing a set of functions for editing and drawing paths both in the editor and in runtime.  
 The plugin also includes ready blueprint examples that show how the plugin functions can be used.
 
 To draw a path, you just need an array of points.
@@ -85,13 +85,13 @@ The plugin includes a total of 32 functions, below is a brief description and ex
 
 **GetPathData**  
 Calculates the data for a regular path.  
-Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the Procedural Mesh to create a path in the editor or in rantime.
+Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the Procedural Mesh to create a path in the editor or in runtime.
 
 <br />
 
 **GetVerticalPathData**  
 Calculates the data for a vertical path.  
-Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime.
+Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in runtime.
 
 | **Parameter** | **Description**  |                                                                                                                                                                                                                                         
 |---------------|------------------|
@@ -102,7 +102,7 @@ Returns arrays with vertex, triangle and UV coordinates, connect these arrays to
 
 **GetDottedPathData**    
 Calculates data for a path consisting of individual polygons.    
-Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime.    
+Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in runtime.    
 
 | **Parameter** | **Description**  |                                                                                                                                                                                                                                         
 |---------------|------------------|
@@ -116,7 +116,7 @@ Returns arrays with vertex, triangle and UV coordinates, connect these arrays to
 
 **GetPathWithCornersOffsetData**  
 Calculates data for a path with indents in the corners.   
-Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime.  
+Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in runtime.  
 
 <br />
 
