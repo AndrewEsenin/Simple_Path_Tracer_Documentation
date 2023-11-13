@@ -95,8 +95,8 @@ Returns arrays with vertex, triangle and UV coordinates, connect these arrays to
 
 | **Parameter** | **Description**  |                                                                                                                                                                                                                                         
 |---------------|------------------|
-| Height | Height of the geometry |
-| Offset | Offset the entire path vertically |
+| Height | Height of the geometry. |
+| Offset | Offset the entire path vertically. |
 
 <br />
 
@@ -106,11 +106,11 @@ Returns arrays with vertex, triangle and UV coordinates, connect these arrays to
 
 | **Parameter** | **Description**  |                                                                                                                                                                                                                                         
 |---------------|------------------|
-| Interval | distance between polygons |
-| Length | Polygon length |
-| Width | Width of the polygon |
-| DotDirection | Allows you to rotate the texture direction by 90 degrees, takes values from 0 to 3 |
-| AddLastDot | If true will create a point at the last point of the path |
+| Interval | Distance between polygons. |
+| Length | Polygon length. |
+| Width | Width of the polygon. |
+| DotDirection | Allows you to rotate the texture direction by 90 degrees, takes values from 0 to 3. |
+| AddLastDot | If true will create a point at the last point of the path. |
 
 <br />
 
