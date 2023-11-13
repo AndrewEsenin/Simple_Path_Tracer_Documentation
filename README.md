@@ -83,162 +83,170 @@ Returns arrays with vertex, triangle and UV coordinates, connect these arrays to
 Calculates the data for a vertical path.  
 Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime.
 
+| **Parameter** | **Description**  |                                                                                                                                                                                                                                         
+|---------------|------------------|
 | Height | Height of the geometry |
 | Offset | Offset the entire path vertically |
+  
+  
+**GetDottedPathData**  
+Calculates data for a path consisting of individual polygons.    
+Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime.    
 
-
-**GetDottedPathData**
-Calculates data for a path consisting of individual polygons.   
-Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime.  
-
+| **Parameter** | **Description**  |                                                                                                                                                                                                                                         
+|---------------|------------------|
 | Interval | distance between polygons |
 | Length | Polygon length |
 | Width | Width of the polygon |
 | DotDirection | Allows you to rotate the texture direction by 90 degrees, takes values from 0 to 3 |
 | AddLastDot | If true will create a point at the last point of the path |
-
-
-**GetPathWithCornersOffsetData**
-Calculates data for a path with indents in the corners. Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime
-
-
-**GetStartPathSegment**
-This function will be useful if you want to attach some object to the beginning of the path and adjust its offset relative to the beginning of the path.
-The function returns the parameters of the first segment of the path, the coordinates of the shifted point lying on the same line with the initial segment.
-Use the StartOffset parameter to move the first point of the path along the first segment of the path.
-Rotation allows you to rotate some object so that it is always rotated to the same place as the first part of the path.
-Direction will help you find an additional displacement along the segment, perpendicular to it, or calculate another Rotation.
-
-
-**GetEndPathSegment**
-Same as GetStartPathSegment only for the last segment of the path.
-
-
-**RoundingPathCorners**
-Rounding the corners of the path.
-The Radius parameter determines the strength of the rounding, and the Segments parameter determines how many polygons will be created at each corner.
-With Segments = 1 it works like a chamfer, just cutting corners, Segments = 8-16 is enough to make smooth and rounded corners.
-It is also handy to use with a small Radius and a value of 1 for Segments to trim very long sharp corners that can occur with sharp path turns.
-bLoopPath in this case looping means that two rounded corners will be added between the first and last point of the path
-
-
-**GetPathLength**
-Returns the length of the path
-Can be used to measure distance
-
-
-**LimitPathByDistance**
-Returns a path bounded by the given distance, all points that are outside the distance will not be included in the final array.
-Can be used to limit the maximum length of the path you want to display.
-It can also be used to animate gradually filling the path.
-
-
-**LimitPathByPercent**
-Same as LimitPathByDistance, but the value varies between 0 and 1, with 0 being the beginning of the path, 1 being the end of the path, and 0.5 being the middle of the path.
-Handy to use if you don't know the length of your path, or only need to draw a certain percentage of the path.
-
-
-**GetPointAlongPath**
-Not to be confused with GetPointsAlongPath.
-Returns the coordinates of a point at a given distance along the path.
-It is convenient to use to move an object along the path or to bind to it.
-
-
-**GetPointAlongPathPercent**
-Same as GetPointAlongPath but changes the value from 0 to 1, 0 is the beginning of the path, 1 is the end of the path, 0.5 is the middle of the path.
-Handy to use if you don't know the length of your path, or need to get the coordinates of the middle or part of the path as a percentage.
-
-
-**MergePathPoints**
-Merges path points that are closer together than MergedDistance.
-If your path has consecutive points with the same coordinates, this function will remove them.
-You can also use this function for optimization, if you have clusters of points along the path, you can combine them into one and then, for example, round the corners.
-
-**OffsetPathPoints**
-Shifts all waypoints outward or inward.
-Convenient to use for shifting a closed boundary outward or inward.
-Self-intersections are not taken into account, so large bias values may lead to unexpected results.
-
-
-**SplitVectorArray**
-A helper function that splits a Vector array into two: a Vector2D array and a Z coordinate array of each point.
-Given the features of cycles in blueprints, this function just works much faster if you want to convert a Vector to Vector2D.
-
-
-**CombineVectorArray**
-The same as SplitVectorArray but in reverse, it combines it into one array.
-
-
-**GetPointsAlongPath**
-Not to be confused with GetPointAlongPath.
-Returns an array of points along the path taken at a given distance from each other.
-Handy to use if you need to set something up along the path at a certain distance.
-
-
-**GetPointsAlongPathDirected**
-Same as GetPointsAlongPath,but in this case it also returns the direction of each point.
-It will be useful for 3D paths, when path segments can be directed up or down.
-
-
-**FixVerticalPathPoints**
-Function for correcting points that are vertically on top of each other (X and Y coordinates coincide), this function moves points away from each other along the path by a specified distance.
-
-
-**FixVerticalPathPoints**
-Makes the Z coordinate of all points in the path equal to the Height value.
-Convenient if you need to align all points in a horizontal plane
-
-
-**RemovePathPointsLyingOnLine**
-If several points of your path lie on the same straight line, they will be deleted.
- Convenient to use to optimize your path before using more expensive functions such as corner rounding.
-
-
-**AddPathCornersOffset**
-Adds two points at a given distance to each corner of the path, the corner point itself is deleted.
-
-
-**CombinePathsData**
-Properly merges the vertexes, triangles, and UV coordinates of two paths.
- To avoid creating two procedural meshes, or to avoid creating two sections of a procedural meshes, you can merge the datum. Or to use the same material or to reduce the number of drogues.
-
-
-**TrimPathFromStart**
-Cuts the beginning of the path by the specified distance
-
-
-**TrimPathFromEnd**
-Trims the points at the end of the path by the specified distance
-
-
-**RemoveSmallSegmentsCloseToEnd**
-Deletes all closely spaced points that are at the end of the path.
-Can be used to accurately position the end of the path.
-
-
-**RemoveSmallSegmentsCloseToBothEnds**
-Removes all closely spaced points located on both sides of the path.
-Can be used to accurately position track ends.
-
-
-**TrimPathComplex**
-Cuts the path on both sides.
-
-
-**GetQuadData**
-Returns the data to create a unit square of the specified size.
-Can be used to create more advanced start and end of path elements.
-FindCornerMidDirection
-Returns the unit vector of the midpoint of the angle formed by the three points, P2 the corner point.
-
-
-**GetVertexColorData**
-Returns an array of vertex colors for the dynamic mesh.
-Used to create a color path and transparency.
-
-
-**SplitPath**
-Divides the path into two parts, at a specified distance.
+  
+  
+**GetPathWithCornersOffsetData**  
+Calculates data for a path with indents in the corners.   
+Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in rantime.  
+  
+  
+**GetStartPathSegment**  
+This function will be useful if you want to attach some object to the beginning of the path and adjust its offset relative to the beginning of the path.  
+The function returns the parameters of the first segment of the path, the coordinates of the shifted point lying on the same line with the initial segment.  
+Use the StartOffset parameter to move the first point of the path along the first segment of the path.  
+Rotation allows you to rotate some object so that it is always rotated to the same place as the first part of the path.  
+Direction will help you find an additional displacement along the segment, perpendicular to it, or calculate another Rotation.  
+  
+  
+**GetEndPathSegment**  
+Same as GetStartPathSegment only for the last segment of the path.   
+  
+  
+**RoundingPathCorners**  
+Rounding the corners of the path.  
+The Radius parameter determines the strength of the rounding, and the Segments parameter determines how many polygons will be created at each corner.  
+With Segments = 1 it works like a chamfer, just cutting corners, Segments = 8-16 is enough to make smooth and rounded corners.  
+It is also handy to use with a small Radius and a value of 1 for Segments to trim very long sharp corners that can occur with sharp path turns.  
+bLoopPath in this case looping means that two rounded corners will be added between the first and last point of the path.  
+  
+  
+**GetPathLength**  
+Returns the length of the path.  
+Can be used to measure distance.  
+  
+  
+**LimitPathByDistance**  
+Returns a path bounded by the given distance, all points that are outside the distance will not be included in the final array.  
+Can be used to limit the maximum length of the path you want to display.  
+It can also be used to animate gradually filling the path.  
+  
+  
+**LimitPathByPercent**  
+Same as LimitPathByDistance, but the value varies between 0 and 1, with 0 being the beginning of the path, 1 being the end of the path, and 0.5 being the middle of the path.  
+Handy to use if you don't know the length of your path, or only need to draw a certain percentage of the path.  
+  
+  
+**GetPointAlongPath**  
+Not to be confused with GetPointsAlongPath.  
+Returns the coordinates of a point at a given distance along the path.  
+It is convenient to use to move an object along the path or to bind to it.  
+  
+  
+**GetPointAlongPathPercent**  
+Same as GetPointAlongPath but changes the value from 0 to 1, 0 is the beginning of the path, 1 is the end of the path, 0.5 is the middle of the path.  
+Handy to use if you don't know the length of your path, or need to get the coordinates of the middle or part of the path as a percentage.  
+  
+  
+**MergePathPoints**  
+Merges path points that are closer together than MergedDistance.  
+If your path has consecutive points with the same coordinates, this function will remove them.  
+You can also use this function for optimization, if you have clusters of points along the path, you can combine them into one and then, for example, round the corners.  
+  
+  
+**OffsetPathPoints**  
+Shifts all waypoints outward or inward.  
+Convenient to use for shifting a closed boundary outward or inward.  
+Self-intersections are not taken into account, so large bias values may lead to unexpected results.  
+  
+  
+**SplitVectorArray**  
+A helper function that splits a Vector array into two: a Vector2D array and a Z coordinate array of each point.  
+Given the features of cycles in blueprints, this function just works much faster if you want to convert a Vector to Vector2D.  
+  
+  
+**CombineVectorArray**  
+The same as SplitVectorArray but in reverse, it combines it into one array.  
+  
+  
+**GetPointsAlongPath**  
+Not to be confused with GetPointAlongPath.  
+Returns an array of points along the path taken at a given distance from each other.  
+Handy to use if you need to set something up along the path at a certain distance.  
+  
+  
+**GetPointsAlongPathDirected**  
+Same as GetPointsAlongPath,but in this case it also returns the direction of each point.  
+It will be useful for 3D paths, when path segments can be directed up or down.  
+  
+  
+**FixVerticalPathPoints**  
+Function for correcting points that are vertically on top of each other (X and Y coordinates coincide), this function moves points away from each other along the path by a specified distance.  
+  
+  
+**FixVerticalPathPoints**  
+Makes the Z coordinate of all points in the path equal to the Height value.  
+Convenient if you need to align all points in a horizontal plane  
+  
+  
+**RemovePathPointsLyingOnLine**  
+If several points of your path lie on the same straight line, they will be deleted.  
+ Convenient to use to optimize your path before using more expensive functions such as corner rounding.  
+  
+  
+**AddPathCornersOffset**  
+Adds two points at a given distance to each corner of the path, the corner point itself is deleted.  
+  
+  
+**CombinePathsData**  
+Properly merges the vertexes, triangles, and UV coordinates of two paths.  
+ To avoid creating two procedural meshes, or to avoid creating two sections of a procedural meshes, you can merge the datum. Or to use the same material or to reduce the number of drogues.  
+  
+  
+**TrimPathFromStart**  
+Cuts the beginning of the path by the specified distance.  
+  
+   
+**TrimPathFromEnd**  
+Trims the points at the end of the path by the specified distance.  
+  
+  
+**RemoveSmallSegmentsCloseToEnd**  
+Deletes all closely spaced points that are at the end of the path.  
+Can be used to accurately position the end of the path.  
+  
+  
+**RemoveSmallSegmentsCloseToBothEnds**  
+Removes all closely spaced points located on both sides of the path.  
+Can be used to accurately position track ends.  
+  
+  
+**TrimPathComplex**  
+Cuts the path on both sides.  
+  
+  
+**GetQuadData**  
+Returns the data to create a unit square of the specified size.  
+Can be used to create more advanced start and end of path elements.  
+  
+  
+**FindCornerMidDirection**  
+Returns the unit vector of the midpoint of the angle formed by the three points, P2 the corner point.  
+  
+  
+**GetVertexColorData**  
+Returns an array of vertex colors for the dynamic mesh.  
+Used to create a color path and transparency.  
+  
+  
+**SplitPath**  
+Divides the path into two parts, at a specified distance.  
 
   
 
