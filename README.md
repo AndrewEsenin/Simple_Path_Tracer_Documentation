@@ -411,7 +411,7 @@ You can migrate assets from the Demo Project to your project as follows:
     
 ![SPT_18](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/b91ab1d3-5609-4a26-83ce-c1654b08bc47)
   
-3. Select your project Content folder.  
+3. Select your project "Content" folder.  
   
 <br />
   
