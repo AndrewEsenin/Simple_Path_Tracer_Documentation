@@ -307,6 +307,7 @@ With the playne settings, you can customize their appearance and position them t
 
 ## Materials  
 **Main Material Parametrs**  
+<br />
 ![SPT_12](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/ce4e60c8-1b4a-4b11-8ebf-4cb1c272150e)  
 
 | **Parameter** | **Description**  |  
@@ -320,22 +321,25 @@ With the playne settings, you can customize their appearance and position them t
 | ScaleUV_Y | Texture tiling along the Y axis. |
 | Move Animation | Enables texture movement along the X or Y axis (or both). |
 | Scale Animation | Enables texture scaling animation. |  
+The animation parameters are responsible for the movement or scaling of the texture, see how you can use these parameters in examples of materials with animations.  
 
+<br />
 To increase the brightness of the glow, you can increase this value when changing the color of the material or adjust the Emmisive values   
 (Also, the brightness of the glow may depend on the post-processing settings)  
 ![SPT_11](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/42d25663-759b-4d3b-9ea5-1512e1cb2d2a)  
 
-The animation parameters are responsible for the movement or scaling of the texture, see how you can use these parameters in examples of materials with animations.  
-
+<br />
 **Visibility Through Objects**  
 To make the path visible through other objects, enable this option in the material settings:  
 ![SPT_10](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/a640201d-6d6a-47ce-9297-289032150479)
 
+<br />
 **Material Optimization**  
 For convenience and versatility, translucent mode and the 2 sided option are enabled by default for all materials.  
 If you don't need opacity, switch it to Opaque mode, this will have a positive effect on performance.  
 ![SPT_08](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/a9e39b28-ba08-48b4-879e-670fd5fa90b2)
 
+<br />
 If you never see the backside of path polygons, disable the 2 Sided option, this will also improve performance.  
 ![SPT_09](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/950f9343-ea2b-4c3c-abd4-961b478897e8)
 
