@@ -324,6 +324,8 @@ List/**/
 
 A procedural mesh is used to visualize the path.
 In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor. 
+![SPT_15](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/cd60c490-3718-4a3f-aa26-8a8b7293a6ed)
+  
 It also has added plaens for the start and end of the path.  
 This is a regular Blueprint Actor, you can freely remove or add any of your own components to it.
 
