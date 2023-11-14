@@ -2,7 +2,7 @@
 Unreal Marketplace Link  
 YouTube  
 Support email: andrewesenin27@gmail.com  
-Demo:
+Demo Project:
 Playble Demo:
   
 <!--ts-->
@@ -26,10 +26,10 @@ To draw a path, you just need an array of points.
 The Blueprint examples use an array of spline points to draw the path. 
 Spline is convenient to use to customize the appearance of the path, but the spline itself is not necessary, the path can be built through any array of points, for example, obtained as Navmesh Path or with the help of some of your algorithm.
 
-You can download the demo level (for UE versions 4.6 - 5.3)  
-link  /**/
-The demo level provides many additional examples.  
-Before you can open a demo level you need to enable the plugin for your engine version (read more).  
+You can download the Demo Project (for UE versions 4.6 - 5.3)  
+link  /**/   
+The Demo Project contains many additional examples.  
+Before you can open the Demo Project you need to enable the plugin for your engine version ([Reed more](#Quick-Start)).   
 You can migrate the entire level with examples or individual examples to your project using migrate (read more).  
   
 You can also check out my other Path Tracer Toolkit Asset (link)  /**/
@@ -64,8 +64,7 @@ for UE4:
 
 
 5. Create a "Simple Path Tracer Actor" actor, or use one of the ready-made examples.  
-"Simple Path Tracer Actor" contains all the functions for editing and creating a path.  
-Download the demo level for more examples (UE 4.6 - 5.3): link /**/  
+"Simple Path Tracer Actor" contains all the functions for editing and creating a path.   
 
 ![SPT_05](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5067783b-38f0-4d1b-a77f-d4a083f8d7f7)
 
