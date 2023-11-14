@@ -334,6 +334,7 @@ On the detail panel you will find its settings:
   
 ![SPT_16](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/15b29c0f-c0bd-4a94-8213-5974c6eca203)
 
+All gameplay logic in the Demo project is located inside the Demo_Player_Controller.  
 
 <br />
 <br />
