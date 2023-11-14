@@ -5,7 +5,7 @@ Support email: andrewesenin27@gmail.com
 
 <!--ts-->
 * [Description](#Description)
-* [Quick Start](#QuickStart)
+* [Quick Start](#Quick-Start)
 <!--te-->
 
 <br />
