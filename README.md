@@ -6,6 +6,10 @@ Support email: andrewesenin27@gmail.com
 <!--ts-->
 * [Description](#Description)
 * [Quick Start](#Quick-Start)
+* [Functions Description](#Functions-Description)
+* [Blueprint Examples](#Blueprint-Examples)
+* [Materials](#Materials)
+* [Features and tips](#Features-and-tips)
 <!--te-->
 
 <br />
