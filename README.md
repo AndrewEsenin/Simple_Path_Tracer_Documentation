@@ -81,6 +81,8 @@ You can also create it, or classes inheriting from it, during the game.
 ## Functions Description  
 The plugin includes a total of 32 functions, below is a brief description and examples of use.
 
+Add functions screen /**/  
+
 **Description of common parameters:**    
 | **Parameter** | **Description**  |                                                                                                                                                                                                                                         
 |---------------|------------------|
