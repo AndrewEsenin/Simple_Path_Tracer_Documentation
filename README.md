@@ -323,18 +323,17 @@ To find the parent blueprint, open it and click in the upper right corner:
 List/**/
 
 A procedural mesh is used to visualize the path.
-In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor. 
+In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor.  
 ![SPT_15](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/cd60c490-3718-4a3f-aa26-8a8b7293a6ed)
   
 It also has added plaens for the start and end of the path.  
 This is a regular Blueprint Actor, you can freely remove or add any of your own components to it.
 
-The data for the procedural mesh can be obtained using functions:
+Drag the blueprint example to the level.   
+On the detail panel you will find its settings:  
+  
+![SPT_16](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/15b29c0f-c0bd-4a94-8213-5974c6eca203)
 
-**Use in a sequencer**
-There is a separate example for sequencer %example nym%
-
-With the playne settings, you can customize their appearance and position them to coincide with the start and end of a path or curve
 
 <br />
 <br />
