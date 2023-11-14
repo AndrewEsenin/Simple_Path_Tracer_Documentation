@@ -30,7 +30,7 @@ You can download the Demo Project (for UE versions 4.6 - 5.3)
 link  /**/   
 The Demo Project contains many additional examples.  
 Before you can open the Demo Project you need to enable the plugin for your engine version ([read more](#Quick-Start)).   
-You can migrate the entire level with examples or individual examples to your project using migrate ([read more](#Quick-Start)).  
+You can migrate the entire level with examples or individual examples to your project using migrate ([read more](#Migrate)).  
   
 You can also check out my other Path Tracer Toolkit Asset (link)  /**/  
 Path Tracer Toolkit is a 100% blueprint asset, and more focused on visual style, while Simple Path Tracer is more focused on optimization and customization.  
@@ -404,6 +404,12 @@ This is due to texture repeating, you can turn it off in the texture settings, b
 <br />
 
 ## Features and Tips  
+### Migrate  
+You can migrate assets from the Demo Project to your project as follows:  
+1. Select the necessary assets.  
+2. Select Migrat, all dependent assets that will also need to be ьшпкфеув will be marked here.  
+3. Select your project Content folder.  
+
 **Performance**
 Performance is directly related to the number of points in your array.  
 So the sequence of function calls matters, for example it is better to trim the path first and then round the corners.   
