@@ -308,8 +308,13 @@ Divides the path into two parts, at a specified distance.
 ## Blueprint Examples  
 All main examples are located in the plugin content folder.  
 You can find other examples in the demo. 
+
+Look at how the examples are made to create the path you need, or use a ready-made example.  
+To work in the editor, the logic runs in the Construction Script, which is called every time the actor changes or moves (for example, when you edit a spline).  
+To work during the game, the logic works in Tick in the Event Graph.  
+To work with the sequencer, all logic also works in Tick.   
   
-Blueprints whose name starts with "BPc_" are child classes of other blueprints, there are no logic changes, only changes to the class settings (different line thickness, different materials used, etc.).  
+Blueprints whose name starts with "BPc_" are child classes of other blueprints, there are no logic changes, only changes to the class settings (different line thickness, different materials used, etc.).    
   
 To find the parent blueprint, open it and click in the upper right corner:  
 
@@ -317,8 +322,9 @@ To find the parent blueprint, open it and click in the upper right corner:
 
 List/**/
 
-A procedural mesh is used to visualize the pathway.
-In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor. It also has added placeholders for the start and end of the path.
+A procedural mesh is used to visualize the path.
+In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor. 
+It also has added plaens for the start and end of the path.  
 This is a regular Blueprint Actor, you can freely remove or add any of your own components to it.
 
 The data for the procedural mesh can be obtained using functions:
