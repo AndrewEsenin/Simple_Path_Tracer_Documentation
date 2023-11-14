@@ -63,10 +63,9 @@ for UE4:
 ![SPT_03](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/d7a20114-106d-4b6d-81be-c21a7ff26787)
 
 
-5. Download the demo level for more examples (UE 4.6 - 5.3): link /**/  
-
-Create a "Simple Path Tracer Actor" actor, or use one of the ready-made examples.  
+5. Create a "Simple Path Tracer Actor" actor, or use one of the ready-made examples.  
 "Simple Path Tracer Actor" contains all the functions for editing and creating a path.  
+Download the demo level for more examples (UE 4.6 - 5.3): link /**/  
 
 ![SPT_05](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5067783b-38f0-4d1b-a77f-d4a083f8d7f7)
 
