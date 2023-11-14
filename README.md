@@ -15,7 +15,6 @@ Playble Demo:
 <!--te-->
 
 <br />
-<br />
 
 ## Description
 Simple Path Tracer is a C++ Plugin containing a set of functions for editing and drawing paths both in the editor and in runtime.  
