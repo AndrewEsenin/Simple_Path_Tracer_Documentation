@@ -32,10 +32,9 @@ The Demo Project contains many additional examples.
 Before you can open the Demo Project you need to enable the plugin for your engine version ([read more](#Quick-Start)).   
 You can migrate the entire level with examples or individual examples to your project using migrate ([read more](#Quick-Start)).  
   
-You can also check out my other Path Tracer Toolkit Asset (link)  /**/
+You can also check out my other Path Tracer Toolkit Asset (link)  /**/  
 Path Tracer Toolkit is a 100% blueprint asset, and more focused on visual style, while Simple Path Tracer is more focused on optimization and customization.  
 Simple Path Tracer will suit you if you need a more optimized solution, for example if you need to draw many paths or with many points.  
-If necessary, you can use both toolkits together, e.g. to use the SPT to PTT path editing functions or to use PTT to SPT path markers.  
 
 <br />
 <br />
