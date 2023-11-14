@@ -407,7 +407,7 @@ This is due to texture repeating, you can turn it off in the texture settings, b
 ### Migrate  
 You can migrate assets from the Demo Project to your project as follows:  
 1. Select the necessary assets.  
-2. Select Migrat, all dependent assets that will also need to be ьшпкфеув will be marked here. 
+2. Select Migrat, all dependent assets that will also need to be migrated will be marked here. 
     
 ![SPT_18](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/b91ab1d3-5609-4a26-83ce-c1654b08bc47)
   
