@@ -291,7 +291,7 @@ Divides the path into two parts, at a specified distance.
 <br />
 <br />
 
-## Description of Blueprint Examples  
+## Blueprint Examples  
 All examples are located in the plugin content folder.  
 Blueprints whose name starts with "BPc_" are child classes of other blueprints, there are no logic changes, only changes to the class settings (different line thickness, different materials used, etc.).  
 To find the blueprint that the BPc_ blueprint is based on, open it and click in the upper right corner:  
@@ -301,6 +301,43 @@ To find the blueprint that the BPc_ blueprint is based on, open it and click in 
 List/**/
 
 With the playne settings, you can customize their appearance and position them to coincide with the start and end of a path or curve
+
+<br />
+<br />
+
+## Materials  
+**Main Material Parametrs**  
+![SPT_12](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/ce4e60c8-1b4a-4b11-8ebf-4cb1c272150e)  
+
+| **Parameter** | **Description**  |  
+|---------------|------------------|  
+| Color | Material color. |
+| Emissive | Glow strength. |
+| Opacity | General material opacity. |
+| Alpha | Opacity mask. |
+| Alpha Contrast | Mask contrast, 0 - no effect, negative values invert the mask, larger values make the edges of the mask sharper. |
+| ScaleUV_X | Texture tiling along the X axis. |
+| ScaleUV_Y | Texture tiling along the Y axis. |
+| Move Animation | Enables texture movement along the X or Y axis (or both). |
+| Scale Animation | Enables texture scaling animation. |  
+
+To increase the brightness of the glow, you can increase this value when changing the color of the material or adjust the Emmisive values   
+(Also, the brightness of the glow may depend on the post-processing settings)  
+![SPT_11](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/42d25663-759b-4d3b-9ea5-1512e1cb2d2a)  
+
+The animation parameters are responsible for the movement or scaling of the texture, see how you can use these parameters in examples of materials with animations.  
+
+**Visibility Through Objects**  
+To make the path visible through other objects, enable this option in the material settings:  
+![SPT_10](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/a640201d-6d6a-47ce-9297-289032150479)
+
+**Material Optimization**  
+For convenience and versatility, translucent mode and the 2 sided option are enabled by default for all materials.  
+If you don't need opacity, switch it to Opaque mode, this will have a positive effect on performance.  
+![SPT_08](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/a9e39b28-ba08-48b4-879e-670fd5fa90b2)
+
+If you never see the backside of path polygons, disable the 2 Sided option, this will also improve performance.  
+![SPT_09](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/950f9343-ea2b-4c3c-abd4-961b478897e8)
 
 <br />
 <br />
@@ -347,10 +384,6 @@ The "Get Vector Array Average" function will help you find the geometric center 
 The brightness of the material can be increased or decreased by changing this parameter in the color selection: 
 
 
-**Material Optimization**
-For convenience and versatility, translucent mode and the 2 sided option are enabled by default in the materials.
-If you don't need opacity switch it to Opaque mode, this will have a positive effect on performance.
-If you are using SPT so that you never see the backside of path polygons, disable the 2 Sided option, this will also improve performance.
 
 A procedural mesh is used to visualize the pathway.
 In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor. It also has added placeholders for the start and end of the path.
