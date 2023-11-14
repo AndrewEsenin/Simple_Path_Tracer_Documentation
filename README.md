@@ -348,6 +348,16 @@ If you never see the backside of path polygons, disable the 2 Sided option, this
   
 ![SPT_09](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/950f9343-ea2b-4c3c-abd4-961b478897e8)
   
+  
+Materials can cause similar artifacts, when part of the texture from one side becomes visible from another.  
+  
+![SPT_13](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5dd2c31a-e7a2-4d9d-ba3d-b8628cd32069)
+  
+This is due to texture repeating, you can turn it off in the texture settings, but the texture will no longer tile.  
+  
+![SPT_14](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/01797c37-5c8e-4946-af62-c761602993fd)
+  
+  
 <br />
 <br />
 
