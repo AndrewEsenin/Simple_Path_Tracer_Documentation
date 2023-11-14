@@ -303,7 +303,9 @@ Divides the path into two parts, at a specified distance.
 <br />
 
 ## Blueprint Examples  
-All examples are located in the plugin content folder.  
+All main examples are located in the plugin content folder.  
+You can find other examples in the demo. 
+  
 Blueprints whose name starts with "BPc_" are child classes of other blueprints, there are no logic changes, only changes to the class settings (different line thickness, different materials used, etc.).  
 To find the blueprint that the BPc_ blueprint is based on, open it and click in the upper right corner:  
 
