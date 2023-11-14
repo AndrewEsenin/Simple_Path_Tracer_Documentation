@@ -29,8 +29,8 @@ Spline is convenient to use to customize the appearance of the path, but the spl
 You can download the Demo Project (for UE versions 4.6 - 5.3)  
 link  /**/   
 The Demo Project contains many additional examples.  
-Before you can open the Demo Project you need to enable the plugin for your engine version ([Read more](#Quick-Start)).   
-You can migrate the entire level with examples or individual examples to your project using migrate (read more).  
+Before you can open the Demo Project you need to enable the plugin for your engine version ([read more](#Quick-Start)).   
+You can migrate the entire level with examples or individual examples to your project using migrate ([read more](#Quick-Start)).  
   
 You can also check out my other Path Tracer Toolkit Asset (link)  /**/
 Path Tracer Toolkit is a 100% blueprint asset, and more focused on visual style, while Simple Path Tracer is more focused on optimization and customization.  
