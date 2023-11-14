@@ -327,21 +327,25 @@ The animation parameters are responsible for the movement or scaling of the text
   
 To increase the brightness of the glow, you can increase this value when changing the color of the material or adjust the Emmisive values   
 (Also, the brightness of the glow may depend on the post-processing settings)  
+  
 ![SPT_11](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/42d25663-759b-4d3b-9ea5-1512e1cb2d2a)  
   
   
 **Visibility Through Objects**  
 To make the path visible through other objects, enable this option in the material settings:  
+  
 ![SPT_10](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/a640201d-6d6a-47ce-9297-289032150479)
   
   
 **Material Optimization**  
-For convenience and versatility, translucent mode and the 2 sided option are enabled by default for all materials.  
-If you don't need opacity, switch it to Opaque mode, this will have a positive effect on performance.  
+For convenience and versatility, translucent mode and the 2 sided option are enabled by default for all materials.   
+If you don't need opacity, switch it to Opaque mode, this will have a positive effect on performance.   
+  
 ![SPT_08](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/a9e39b28-ba08-48b4-879e-670fd5fa90b2)
   
   
 If you never see the backside of path polygons, disable the 2 Sided option, this will also improve performance.  
+  
 ![SPT_09](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/950f9343-ea2b-4c3c-abd4-961b478897e8)
   
 <br />
