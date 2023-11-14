@@ -408,11 +408,13 @@ This is due to texture repeating, you can turn it off in the texture settings, b
 You can migrate assets from the Demo Project to your project as follows:  
 1. Select the necessary assets.  
 2. Select Migrat, all dependent assets that will also need to be ьшпкфеув will be marked here. 
+    
+![SPT_18](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/b91ab1d3-5609-4a26-83ce-c1654b08bc47)
   
-![SPT_17](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/ac166061-9aa4-4be4-94a2-51f181ac26eb)
-
 3. Select your project Content folder.  
-
+  
+<br />
+  
 **Performance**
 Performance is directly related to the number of points in your array.  
 So the sequence of function calls matters, for example it is better to trim the path first and then round the corners.   
