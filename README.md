@@ -306,6 +306,15 @@ With the playne settings, you can customize their appearance and position them t
 <br />
 
 ## Materials  
+The asset includes three main materials, which are located in the Materials > Masters folder.  
+All other materials are instances of these 3 materials.  
+| **Name** | **Description**  |  
+|----------|------------------|  
+| M_SPT | Main material with animations. |
+| M_SPT_Translucent | Material that is used to create transparency at the beginning and end of the path. |
+| M_SPT_Vertex | Material for creating multi-colored paths with transparency using vertex color. |
+  
+  
 **Main Material Parametrs**  
 <br />
 ![SPT_12](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/ce4e60c8-1b4a-4b11-8ebf-4cb1c272150e)  
