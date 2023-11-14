@@ -310,6 +310,7 @@ All main examples are located in the plugin content folder.
 You can find other examples in the demo. 
   
 Blueprints whose name starts with "BPc_" are child classes of other blueprints, there are no logic changes, only changes to the class settings (different line thickness, different materials used, etc.).  
+  
 To find the parent blueprint, open it and click in the upper right corner:  
 
 ![SPT_07](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/225b8910-8b0a-4287-8560-8ed891113333)
