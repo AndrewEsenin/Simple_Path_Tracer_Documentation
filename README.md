@@ -314,11 +314,12 @@ All other materials are instances of these 3 materials.
 | M_SPT_Translucent | Material that is used to create transparency at the beginning and end of the path. |
 | M_SPT_Vertex | Material for creating multi-colored paths with transparency using vertex color. |
   
+<br />
   
 **Main Material Parametrs**  
-<br />
+  
 ![SPT_12](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/ce4e60c8-1b4a-4b11-8ebf-4cb1c272150e)  
-
+  
 | **Parameter** | **Description**  |  
 |---------------|------------------|  
 | Color | Material color. |
