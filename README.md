@@ -1,6 +1,7 @@
 # Simple Path Tracer Documentation
 Unreal Marketplace Link  
 YouTube  
+Support email: andrewesenin27@gmail.com  
 
 <br />
 <br />
@@ -15,12 +16,13 @@ The Blueprint examples use an array of spline points to draw the path.
 Spline is convenient to use to customize the appearance of the path, but the spline itself is not necessary, the path can be built through any array of points, for example, obtained as Navmesh Path or with the help of some of your algorithm.
 
 You can download the demo level (for UE versions 4.6 - 5.3)  
-link
+link  /**/
 The demo level provides many additional examples.  
 Before you can open a demo level you need to enable the plugin for your engine version (read more).  
 You can migrate the entire level with examples or individual examples to your project using migrate (read more).  
-
-Path Tracer Toolkit is more focused on visual style, while Simple Path Tracer is more focused on optimization and customization.  
+  
+You can also check out my other Path Tracer Toolkit Asset (link)  /**/
+Path Tracer Toolkit is a 100% blueprint asset, and more focused on visual style, while Simple Path Tracer is more focused on optimization and customization.  
 Simple Path Tracer will suit you if you need a more optimized solution, for example if you need to draw many paths or with many points.  
 If necessary, you can use both toolkits together, e.g. to use the SPT to PTT path editing functions or to use PTT to SPT path markers.  
 
