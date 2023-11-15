@@ -338,8 +338,7 @@ The main parameters, may differ depending on the blueprint class.
 | **Parameter** | **Description**  |                                                       
 |---------------|------------------|
 | Align Spline Horizontal | This button aligns all spline points in the horizontal plane. Due to the way the construction script works, the visual path will not be updated, you need to click on the Update parameter or move the entire spline or actor. |
-| Offset Spline Points To Actor Center | This button aligns the center of the actor to the center of the spline, useful if you have moved the spline points too far and the actor becomes awkward to move or rotate.
-Due to the way the construction script works, the visual path will not be updated, you need to click on the Update parameter or move the spline or the entire actor, after which you need to reselect the actor to update the movement gizmo. |
+| Offset Spline Points To Actor Center | This button aligns the center of the actor to the center of the spline, useful if you have moved the spline points too far and the actor becomes awkward to move or rotate. Due to the way the construction script works, the visual path will not be updated, you need to click on the Update parameter or move the spline or the entire actor, after which you need to reselect the actor to update the movement gizmo. |
 | Update | A cosmetic variable required to update an actor in the editor, changing it (like any other variable) causes the Construction Script to update. |
 | Thickness | Half of the line thickness. |
 | Corner Radius | The distance at which the corners will be rounded. |
@@ -354,7 +353,8 @@ Due to the way the construction script works, the visual path will not be update
 | Rectangular UV | Makes the UV of each polygon rectangular, if false UV will match the shape of the polygon. |
 
 **UV**
-You only need to turn on UV if you want to use some texture on the path meshes, such as a dotted line. If you just use a pure color, UV is not necessary.  
+You only need to turn on UV if you want to use some texture on the path meshes, such as a dotted line.   
+If you just use a pure color, UV is not necessary.   
 Maximum performance can be achieved by disabling UV creation.  
 
 ![SPT_19](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/172b7dcf-1ad9-4923-bd7f-81fb0819d3ee)
