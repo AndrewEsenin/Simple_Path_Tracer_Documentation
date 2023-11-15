@@ -319,10 +319,13 @@ To find the parent blueprint, open it and click in the upper right corner:
 
 ![SPT_07](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/225b8910-8b0a-4287-8560-8ed891113333)
 
+**Description of Examples**  
+All examples have similar code, but to improve readability, all examples were made in separate classes.  
 List/**/
 
 A procedural mesh is used to visualize the path.
 In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor.  
+
 ![SPT_15](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/cd60c490-3718-4a3f-aa26-8a8b7293a6ed)
   
 It also has added plaens for the start and end of the path.  
