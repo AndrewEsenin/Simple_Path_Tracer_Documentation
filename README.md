@@ -335,9 +335,7 @@ On the detail panel you will find its settings:
 
 | **Parameter** | **Description**  |                                                       
 |---------------|------------------|
-| Align Spline Horizontal | This button aligns all spline points in the horizontal plane.  
-Due to the way the construction script works, the visual path will not be updated;   
-you need to click on the Update parameter or move the entire spline or actor. |
+| Align Spline Horizontal | This button aligns all spline points in the horizontal plane. Due to the way the construction script works, the visual path will not be updated, you need to click on the Update parameter or move the entire spline or actor. |
 | Offset Spline Points To Actor Center |  |
 |  |  |
 |  |  |
