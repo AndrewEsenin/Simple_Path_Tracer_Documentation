@@ -319,6 +319,8 @@ To find the parent blueprint, open it and click in the upper right corner:
 
 ![SPT_07](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/225b8910-8b0a-4287-8560-8ed891113333)
 
+<br />
+
 ### Description  
 All examples have similar code, but to improve readability, all examples were made in separate classes.  
 List/**/  
@@ -331,6 +333,8 @@ In the Blueprint examples, a procedural mesh component has already been added to
   
 It also has added plaens for the start and end of the path.  
 This is a regular Blueprint Actor, you can freely remove or add any of your own components to it.
+
+<br />
 
 ### Settings  
 Drag the blueprint example to the level.   
@@ -355,6 +359,8 @@ The main parameters, may differ depending on the blueprint class.
 | Offset UV | Offsets the texture along two axes. |
 | Remove Seams On UV | Removes texture seams between polygons. |
 | Rectangular UV | Makes the UV of each polygon rectangular, if false UV will match the shape of the polygon. |
+
+<br />
 
 ### UV  
 You only need to turn on UV if you want to use some texture on the path meshes, such as a dotted line.   
