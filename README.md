@@ -81,7 +81,7 @@ The plugin includes a total of 32 functions, below is a brief description and ex
 Add functions screen /**/  
 
 **Description of common parameters:**    
-| **Parameter** | **Description**  |                                                                                                                                                                                                                                         
+| **Parameter** | **Description**  |                                                                                   
 |---------------|------------------|
 | PathPoints | Array of path points. |
 | bLoopPath | Loops the path. |
@@ -105,7 +105,7 @@ Returns arrays with vertex, triangle and UV coordinates, connect these arrays to
 Calculates the data for a vertical path.  
 Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in runtime.
 
-| **Parameter** | **Description**  |                                                                                                                                                                                                                                         
+| **Parameter** | **Description**  |                                                       
 |---------------|------------------|
 | Height | Height of the geometry. |
 | Offset | Offset the entire path vertically. |
@@ -116,7 +116,7 @@ Returns arrays with vertex, triangle and UV coordinates, connect these arrays to
 Calculates data for a path consisting of individual polygons.    
 Returns arrays with vertex, triangle and UV coordinates, connect these arrays to the "Create Mesh Section" function of the procedural mesh to create a path in the editor or in runtime.    
 
-| **Parameter** | **Description**  |                                                                                                                                                                                                                                         
+| **Parameter** | **Description**  |                                                                              
 |---------------|------------------|
 | Interval | Distance between polygons. |
 | Length | Polygon length. |
@@ -327,10 +327,22 @@ In the Blueprint examples, a procedural mesh component has already been added to
 It also has added plaens for the start and end of the path.  
 This is a regular Blueprint Actor, you can freely remove or add any of your own components to it.
 
+**Blueprint Settings**
 Drag the blueprint example to the level.   
 On the detail panel you will find its settings:  
   
 ![SPT_16](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/15b29c0f-c0bd-4a94-8213-5974c6eca203)
+
+| **Parameter** | **Description**  |                                                       
+|---------------|------------------|
+| Align Spline Horizontal | This button aligns all spline points in the horizontal plane.  
+Due to the way the construction script works, the visual path will not be updated;   
+you need to click on the Update parameter or move the entire spline or actor. |
+| Offset Spline Points To Actor Center |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
 All gameplay logic in the Demo project is located inside the Demo_Player_Controller.  
 
