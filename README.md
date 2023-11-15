@@ -306,6 +306,7 @@ Divides the path into two parts, at a specified distance.
 ## Blueprint Examples  
 All main examples are located in the plugin content folder.  
 You can find other examples in the demo. 
+All gameplay logic in the Demo project is located inside the Demo_Player_Controller.  
 
 Look at how the examples are made to create the path you need, or use a ready-made example.  
 To work in the editor, the logic runs in the Construction Script, which is called every time the actor changes or moves (for example, when you edit a spline).  
@@ -333,20 +334,36 @@ On the detail panel you will find its settings:
   
 ![SPT_16](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/15b29c0f-c0bd-4a94-8213-5974c6eca203)
 
+The main parameters, may differ depending on the blueprint class.  
 | **Parameter** | **Description**  |                                                       
 |---------------|------------------|
 | Align Spline Horizontal | This button aligns all spline points in the horizontal plane. Due to the way the construction script works, the visual path will not be updated, you need to click on the Update parameter or move the entire spline or actor. |
-| Offset Spline Points To Actor Center |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| Offset Spline Points To Actor Center | This button aligns the center of the actor to the center of the spline, useful if you have moved the spline points too far and the actor becomes awkward to move or rotate.
+Due to the way the construction script works, the visual path will not be updated, you need to click on the Update parameter or move the spline or the entire actor, after which you need to reselect the actor to update the movement gizmo. |
+| Update | A cosmetic variable required to update an actor in the editor, changing it (like any other variable) causes the Construction Script to update. |
+| Thickness | Half of the line thickness. |
+| Corner Radius | The distance at which the corners will be rounded. |
+| Corner Segments | Number of polygons in each corner. |
+| Line Material | The material that will be applied to the main path mesh. |
+| Enable Start Plane | Enables display of the start plane, the remaining parameters are responsible for the alignment of this plane. |
+| Enable End Plane | Enables display of the end plane, the remaining parameters are responsible for the alignment of this plane. |
+| Enable UV | Enables UV generation, needed to display a unique texture on the path mesh. |
+| Scale UV | Changes the texture tiling along two axes, compresses or stretches the UV of the entire mesh. |
+| Offset UV | Offsets the texture along two axes. |
+| Remove Seams On UV | Removes texture seams between polygons. |
+| Rectangular UV | Makes the UV of each polygon rectangular, if false UV will match the shape of the polygon. |
 
-All gameplay logic in the Demo project is located inside the Demo_Player_Controller.  
-
-If you want the texture to be displayed on the path mesh, you need to enable UV generation:  
+**UV**
+You only need to turn on UV if you want to use some texture on the path meshes, such as a dotted line. If you just use a pure color, UV is not necessary.  
+Maximum performance can be achieved by disabling UV creation.  
 
 ![SPT_19](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/172b7dcf-1ad9-4923-bd7f-81fb0819d3ee)
+
+**Removing seams**  
+Seams at texture are UV related. There are many ways to remove seams, with their own advantages and disadvantages.   
+Enabling the "Remove Seams On UV" option should solve all problems, but with this method the texture on the path segments may be deformed, the deformation can be corrected by adding rounded corners.     
+If "Remove Seams On UV" is enabled but "Rectangular UV" is disabled, the UV will follow the shape of the polygons, in some cases this approach gives better results.   
+Seams can also appear if you have a Scale UV in the material other than 1, if you need a scale, use the Scale UV parameter in the actor.  
 
 
 <br />
@@ -435,28 +452,19 @@ Performance is directly related to the number of points in your array.
 So the sequence of function calls matters, for example it is better to trim the path first and then round the corners.   
 The sequence of functions also affects how it will look, experiment, just keep in mind that functions that add a lot of points are better called last.  
 
-**UV utilization**
-You only need to turn on UV if you want to use some texture on the path meshes, such as a dotted line. If you just use a pure color, UV is not necessary.  
-Maximum performance can be achieved by disabling UV creation.  
-UV creation significantly increases the amount of logic to be executed.  
-
-**Removing seams from a texture**  
-Seams at texture are UV related. There are many ways to remove seams, with their own advantages and disadvantages.   
-Enabling the "Remove Seams On UV" option should solve all problems, but with this method the texture on the path segments may be deformed, the deformation can be corrected by adding rounded corners (screenshot).    
-If "Remove Seams On UV" is enabled but "Rectangular UV" is disabled, the UV will follow the shape of the polygons, in some cases this approach gives better results. Seams can also appear if you have a Scale UV in the material other than 1.  
-
 **SPT is designed to draw the path mainly in 2D**  
 The plugin can draw in 3D, but there are some peculiarities.    
 If the path points are evenly spaced (X and Y coordinates are the same) a section of the path may not be displayed or may be rotated incorrectly, to solve this problem there is a function "Fix Vertical Path Points", it automatically adds an adjustable indentation along the path to avoid this problem.    
 If you want to draw something in a different plane, you can draw a horizontal path and then just rotate the entire actor itself to the plane you want.    
 
-If you do not use the function to round corners, when the angles between two path segments are very small   
+**Disappearing path segments**
+If a segment of the path is not displayed, it is likely that you have two consecutive points that have the same or very close coordinates.  
+You can fix this by using the Merge Waypoints function, which finds and removes duplicate points.   
 
-If a section of the path is not displayed, it is likely that at that location in your point array, two consecutive points have the same or very close coordinates. You can fix this by using the "Merge Path Points" function, which finds and removes repeating points.  
-
+**Creation Static Mesh**
 If necessary you can bake the path into a single mesh, this is a much more productive solution if you want to use SPT as static objects spaced out by the drop.
-There are 2 main ways to bake a path.  
-first way, you can do it through the engine function, just run for UE4: for UE5:
+There are 2 main ways to bake a path. 
+First way, you can do it through the engine function, just run for UE4: for UE5:
 The second way will bake only the path itself, without start and end placeholders, just select the SPT actor on the scene, select the procedural mesh, in its settings click and "Create Static Mesh" and choose where to save
 
 **Working with arrays**  
