@@ -319,7 +319,7 @@ To find the parent blueprint, open it and click in the upper right corner:
 
 ![SPT_07](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/225b8910-8b0a-4287-8560-8ed891113333)
 
-### Main Examples 
+### Description  
 All examples have similar code, but to improve readability, all examples were made in separate classes.  
 List/**/  
 You can find more exemples in Demo Project.  
@@ -332,7 +332,7 @@ In the Blueprint examples, a procedural mesh component has already been added to
 It also has added plaens for the start and end of the path.  
 This is a regular Blueprint Actor, you can freely remove or add any of your own components to it.
 
-### Blueprint Settings   
+### Settings  
 Drag the blueprint example to the level.   
 On the detail panel you will find its settings:  
   
@@ -363,7 +363,7 @@ Maximum performance can be achieved by disabling UV creation.
 
 ![SPT_19](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/172b7dcf-1ad9-4923-bd7f-81fb0819d3ee)
 
-### Removing seams   
+**Removing Seams**  
 Seams at texture are UV related. There are many ways to remove seams, with their own advantages and disadvantages.   
 Enabling the "Remove Seams On UV" option should solve all problems, but with this method the texture on the path segments may be deformed, the deformation can be corrected by adding rounded corners.     
 If "Remove Seams On UV" is enabled but "Rectangular UV" is disabled, the UV will follow the shape of the polygons, in some cases this approach gives better results.   
