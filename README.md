@@ -334,7 +334,7 @@ On the detail panel you will find its settings:
 
 All gameplay logic in the Demo project is located inside the Demo_Player_Controller.  
 
-If you want texture and not just color, you need to enable UV generation:  
+If you want the texture to be displayed on the path mesh, you need to enable UV generation:  
 
 ![SPT_19](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/172b7dcf-1ad9-4923-bd7f-81fb0819d3ee)
 
