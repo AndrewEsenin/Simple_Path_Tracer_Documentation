@@ -8,8 +8,8 @@ Playble Demo:
 <!--ts-->
 * [Description](#Description)
 * [Quick Start](#Quick-Start)
-* [Functions Description](#Functions-Description)
 * [Blueprint Examples](#Blueprint-Examples)
+* [Functions Description](#Functions-Description)
 * [Materials](#Materials)
 * [Features and Tips](#Features-and-Tips)
 <!--te-->
