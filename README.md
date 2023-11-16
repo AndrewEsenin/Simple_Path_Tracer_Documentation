@@ -75,6 +75,81 @@ You can also create it, or classes inheriting from it, during the game.
 <br />
 <br />
 
+## Blueprint Examples  
+All main examples are located in the plugin content folder.  
+You can find other examples in the demo. 
+All gameplay logic in the Demo project is located inside the Demo_Player_Controller.  
+
+Look at how the examples are made to create the path you need, or use a ready-made example.  
+To work in the editor, the logic runs in the Construction Script, which is called every time the actor changes or moves (for example, when you edit a spline).  
+To work during the game, the logic works in Tick in the Event Graph.  
+To work with the sequencer, all logic also works in Tick.   
+  
+Blueprints whose name starts with "BPc_" are child classes of other blueprints, there are no logic changes, only changes to the class settings (different line thickness, different materials used, etc.).    
+  
+To find the parent blueprint, open it and click in the upper right corner:  
+
+![SPT_07](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/225b8910-8b0a-4287-8560-8ed891113333)
+
+<br />
+
+### Description  
+All examples have similar code, but to improve readability, all examples were made in separate classes.  
+List/**/  
+You can find more exemples in Demo Project.  
+
+A procedural mesh is used to visualize the path.
+In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor.  
+
+![SPT_15](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/cd60c490-3718-4a3f-aa26-8a8b7293a6ed)
+  
+It also has added plaens for the start and end of the path.  
+This is a regular Blueprint Actor, you can freely remove or add any of your own components to it.
+
+<br />
+
+### Settings  
+Drag the blueprint example to the level.   
+On the detail panel you will find its settings:  
+  
+![SPT_16](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/15b29c0f-c0bd-4a94-8213-5974c6eca203)
+
+The main parameters, may differ depending on the blueprint class.  
+| **Parameter** | **Description**  |                                                       
+|---------------|------------------|
+| Align Spline Horizontal | This button aligns all spline points in the horizontal plane. Due to the way the construction script works, the visual path will not be updated, you need to click on the Update parameter or move the entire spline or actor. |
+| Offset Spline Points To Actor Center | This button aligns the center of the actor to the center of the spline, useful if you have moved the spline points too far and the actor becomes awkward to move or rotate. Due to the way the construction script works, the visual path will not be updated, you need to click on the Update parameter or move the spline or the entire actor, after which you need to reselect the actor to update the movement gizmo. |
+| Update | A cosmetic variable required to update an actor in the editor, changing it (like any other variable) causes the Construction Script to update. |
+| Thickness | Half of the line thickness. |
+| Corner Radius | The distance at which the corners will be rounded. |
+| Corner Segments | Number of polygons in each corner. |
+| Line Material | The material that will be applied to the main path mesh. |
+| Enable Start Plane | Enables display of the start plane, the remaining parameters are responsible for the alignment of this plane. |
+| Enable End Plane | Enables display of the end plane, the remaining parameters are responsible for the alignment of this plane. |
+| Enable UV | Enables UV generation, needed to display a unique texture on the path mesh. |
+| Scale UV | Changes the texture tiling along two axes, compresses or stretches the UV of the entire mesh. |
+| Offset UV | Offsets the texture along two axes. |
+| Remove Seams On UV | Removes texture seams between polygons. |
+| Rectangular UV | Makes the UV of each polygon rectangular, if false UV will match the shape of the polygon. |
+
+<br />
+
+### UV  
+You only need to turn on UV if you want to use some texture on the path meshes, such as a dotted line.   
+If you just use a pure color, UV is not necessary.   
+Maximum performance can be achieved by disabling UV creation.  
+
+![SPT_19](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/172b7dcf-1ad9-4923-bd7f-81fb0819d3ee)
+
+**Removing Seams**  
+Seams at texture are UV related. There are many ways to remove seams, with their own advantages and disadvantages.   
+Enabling the "Remove Seams On UV" option should solve all problems, but with this method the texture on the path segments may be deformed, the deformation can be corrected by adding rounded corners.     
+If "Remove Seams On UV" is enabled but "Rectangular UV" is disabled, the UV will follow the shape of the polygons, in some cases this approach gives better results.   
+Seams can also appear if you have a Scale UV in the material other than 1, if you need a scale, use the Scale UV parameter in the actor.  
+
+<br />
+<br />
+
 ## Functions Description  
 The plugin includes a total of 32 functions, below is a brief description and examples of use.
 
@@ -311,82 +386,6 @@ Used to create a color path and transparency.
 
 **SplitPath**  
 Divides the path into two parts, at a specified distance.  
-
-<br />
-<br />
-
-## Blueprint Examples  
-All main examples are located in the plugin content folder.  
-You can find other examples in the demo. 
-All gameplay logic in the Demo project is located inside the Demo_Player_Controller.  
-
-Look at how the examples are made to create the path you need, or use a ready-made example.  
-To work in the editor, the logic runs in the Construction Script, which is called every time the actor changes or moves (for example, when you edit a spline).  
-To work during the game, the logic works in Tick in the Event Graph.  
-To work with the sequencer, all logic also works in Tick.   
-  
-Blueprints whose name starts with "BPc_" are child classes of other blueprints, there are no logic changes, only changes to the class settings (different line thickness, different materials used, etc.).    
-  
-To find the parent blueprint, open it and click in the upper right corner:  
-
-![SPT_07](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/225b8910-8b0a-4287-8560-8ed891113333)
-
-<br />
-
-### Description  
-All examples have similar code, but to improve readability, all examples were made in separate classes.  
-List/**/  
-You can find more exemples in Demo Project.  
-
-A procedural mesh is used to visualize the path.
-In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor.  
-
-![SPT_15](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/cd60c490-3718-4a3f-aa26-8a8b7293a6ed)
-  
-It also has added plaens for the start and end of the path.  
-This is a regular Blueprint Actor, you can freely remove or add any of your own components to it.
-
-<br />
-
-### Settings  
-Drag the blueprint example to the level.   
-On the detail panel you will find its settings:  
-  
-![SPT_16](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/15b29c0f-c0bd-4a94-8213-5974c6eca203)
-
-The main parameters, may differ depending on the blueprint class.  
-| **Parameter** | **Description**  |                                                       
-|---------------|------------------|
-| Align Spline Horizontal | This button aligns all spline points in the horizontal plane. Due to the way the construction script works, the visual path will not be updated, you need to click on the Update parameter or move the entire spline or actor. |
-| Offset Spline Points To Actor Center | This button aligns the center of the actor to the center of the spline, useful if you have moved the spline points too far and the actor becomes awkward to move or rotate. Due to the way the construction script works, the visual path will not be updated, you need to click on the Update parameter or move the spline or the entire actor, after which you need to reselect the actor to update the movement gizmo. |
-| Update | A cosmetic variable required to update an actor in the editor, changing it (like any other variable) causes the Construction Script to update. |
-| Thickness | Half of the line thickness. |
-| Corner Radius | The distance at which the corners will be rounded. |
-| Corner Segments | Number of polygons in each corner. |
-| Line Material | The material that will be applied to the main path mesh. |
-| Enable Start Plane | Enables display of the start plane, the remaining parameters are responsible for the alignment of this plane. |
-| Enable End Plane | Enables display of the end plane, the remaining parameters are responsible for the alignment of this plane. |
-| Enable UV | Enables UV generation, needed to display a unique texture on the path mesh. |
-| Scale UV | Changes the texture tiling along two axes, compresses or stretches the UV of the entire mesh. |
-| Offset UV | Offsets the texture along two axes. |
-| Remove Seams On UV | Removes texture seams between polygons. |
-| Rectangular UV | Makes the UV of each polygon rectangular, if false UV will match the shape of the polygon. |
-
-<br />
-
-### UV  
-You only need to turn on UV if you want to use some texture on the path meshes, such as a dotted line.   
-If you just use a pure color, UV is not necessary.   
-Maximum performance can be achieved by disabling UV creation.  
-
-![SPT_19](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/172b7dcf-1ad9-4923-bd7f-81fb0819d3ee)
-
-**Removing Seams**  
-Seams at texture are UV related. There are many ways to remove seams, with their own advantages and disadvantages.   
-Enabling the "Remove Seams On UV" option should solve all problems, but with this method the texture on the path segments may be deformed, the deformation can be corrected by adding rounded corners.     
-If "Remove Seams On UV" is enabled but "Rectangular UV" is disabled, the UV will follow the shape of the polygons, in some cases this approach gives better results.   
-Seams can also appear if you have a Scale UV in the material other than 1, if you need a scale, use the Scale UV parameter in the actor.  
-
 
 <br />
 <br />
