@@ -95,7 +95,10 @@ To find the parent blueprint, open it and click in the upper right corner:
 
 ### Description  
 All examples have similar code, but to improve readability, all examples were made in separate classes.  
-List/**/  
+
+**BP_SPT_Master**
+This example is similar to the example of a regular line **BP_SPT_Line**, the difference is that in this example material parameters are added to the settings, which is convenient for testing, so as not to create many different materials.
+
 You can find more exemples in Demo Project.  
 
 A procedural mesh is used to visualize the path.
