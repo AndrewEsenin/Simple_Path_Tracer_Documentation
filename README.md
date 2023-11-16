@@ -295,6 +295,18 @@ Returns the unit vector of the midpoint of the angle formed by the three points,
 Returns an array of vertex colors for the dynamic mesh.  
 Used to create a color path and transparency.  
 
+| **Parameter** | **Description**  |  
+|---------------|------------------|  
+| Enable Start Opacity | Enables transparency at the beginning of the path. |
+| Start Distance | The distance at which the path will be transparent. |
+| Enable End Opacity | Enables transparency at the end of the path. |
+| End Distance | The distance at which the path will be transparent. |
+| Enable UV | Enables UV creation, enable if you want a unique texture on the meshes of your path, not just a color. |
+| Color Curve | Color gradient, the path will be colored in the colors of this gradient. |
+| Unit Curve | If true, then the Color Curve colors will be taken in the range from 0 to 1, regardless of the path length. The beginning of the path to the 1st end of the loop will be colored in color 0. If false, the Color Curve will be taken from 0 to the maximum path length, useful if you want the path to change color only at a certain distance. |
+| Hardness | Transparency blur strength. |
+| Default Color | If Color Curve is not connected, this color will be used for the entire path. |  
+
 <br />
 
 **SplitPath**  
