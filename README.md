@@ -12,6 +12,7 @@ Playble Demo:
 * [Functions Description](#Functions-Description)
 * [Materials](#Materials)
 * [Features and Tips](#Features-and-Tips)
+* [Demo Project](#Demo-Project)
 <!--te-->
 
 <br />
@@ -26,9 +27,7 @@ To draw a path, you just need an array of points.
 The Blueprint examples use an array of spline points to draw the path. 
 Spline is convenient to use to customize the appearance of the path, but the spline itself is not necessary, the path can be built through any array of points, for example, obtained as Navmesh Path or with the help of some of your algorithm.
 
-You can download the Demo Project (for UE versions 4.6 - 5.3)  
-link  /**/   
-The Demo Project contains many additional examples.  
+You can download the ([Demo Project](#Demo-Project)), it contains many additional examples.  
 Before you can open the Demo Project you need to enable the plugin for your engine version ([read more](#Quick-Start)).   
 You can migrate the entire level with examples or individual examples from Demo Project to your project using migrate ([read more](#Migrate)).  
 
@@ -501,3 +500,10 @@ The "Get Vector Array Average" function will help you find the geometric center 
 You can also check out my other Path Tracer Toolkit Asset (link)  /**/  
 Path Tracer Toolkit is a 100% blueprint asset, and more focused on visual style, while this asset is more focused on optimization and customization.  
 This asset will suit you if you need a more optimized solution, for example if you need to draw many paths or with many points.  
+  
+<br />
+<br />
+
+## Demo Project
+Demo Project (for UE versions 4.6 - 5.3)  
+link  /**/   
