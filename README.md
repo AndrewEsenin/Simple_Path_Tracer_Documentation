@@ -104,6 +104,7 @@ It also has added plaens for the start and end of the path.
 This is a regular Blueprint Actor, you can freely remove or add any of your own components to it.
 
 If you want to use Path Tracer at runtime, you can delete the Spline and Billboard components, and all associated logic, for optimization.  
+
 ![SPT_22](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/f9c25256-719e-43cf-9976-61ae1e93a4f2)
 
 <br />
