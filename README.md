@@ -90,7 +90,6 @@ To find the parent blueprint, open it and click in the upper right corner:
 ![SPT_07](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/225b8910-8b0a-4287-8560-8ed891113333)
 
 <br />
-
 ### Description  
 All examples have similar code, but to improve readability, all examples were made in separate classes.  
 
