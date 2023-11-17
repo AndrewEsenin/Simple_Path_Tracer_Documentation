@@ -94,7 +94,7 @@ All examples have similar code, but to improve readability, all examples were ma
 
 | **Blueprint** | **Description**  |                                                       
 |---------------|------------------|
-| **BP_SPT_Master** | This example is similar to the example of a regular line **BP_SPT_Line**, the difference is that in this example material parameters are added to the settings, which is convenient for testing, so as not to create many different materials. |
+| **BP_SPT_Master** | This example is identical to the **BP_SPT_Line**, the difference is that here the material parameters are included in the settings. It is useful for testing so as not to create a large amount of materials. |
 |  |  |
 |  |  |
 |  |  |
