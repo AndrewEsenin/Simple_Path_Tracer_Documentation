@@ -55,15 +55,26 @@ for UE4:
 ![SPT_03](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/d7a20114-106d-4b6d-81be-c21a7ff26787)
 
 
-4. Create a "Simple Path Tracer Actor" actor, or use one of the ready-made examples.  
-"Simple Path Tracer Actor" contains all the functions for editing and creating a path.   
+4. "Simple Path Tracer Actor" contains all the functions for editing and creating a path.  
+You can create your own empty actor or use one of the ready-made examples.
 
 ![SPT_05](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5067783b-38f0-4d1b-a77f-d4a083f8d7f7)
 
-  
-You can also create it, or classes inheriting from it, during the game.  
+If you want to use Path Tracer in the editor, simply drag one of the ready-made examples onto the level and edit the spline.
 
-![SPT_06](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/a9567161-468e-4f83-9db1-eea010773325)
+If you want to use Path Tracer at runtime, you can do the following:
+Create a new Path Tracer using the Spawn Actor from Class function, selecting one of the ready-made examples, and connect this node to the Begin Play event (for example in Player Controller).
+
+![SPT_20](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/9192f9dc-d16d-4781-a9d2-f3fa75a39bed)
+
+Now you can, for example, draw a path from the player character to the coordinates under the cursor like this:
+
+![SPT_21](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/6de31749-3612-4c4c-b603-9796244ee5bd)
+
+If you need to draw a path along your array of points, call the Draw Path function in any of the ready-made examples in the same way and connect your array of points to this function.
+
+If you want to use Path Tracer with a sequencer, then ([read more here](#Sequencer)).   
+
 
 <br />
 <br />
