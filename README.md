@@ -81,7 +81,7 @@ If you want to use Path Tracer with a sequencer, then ([read more here](#Sequenc
 
 ## Blueprint Examples  
 All main examples are located in the plugin content folder.  
-You can find other examples in the demo. 
+You can find more exemples in Demo Project.  
 All gameplay logic in the Demo project is located inside the Demo_Player_Controller.  
 
 Look at how the examples are made to create the path you need, or use a ready-made example.  
@@ -100,8 +100,6 @@ All examples have similar code, but to improve readability, all examples were ma
 
 **BP_SPT_Master**
 This example is similar to the example of a regular line **BP_SPT_Line**, the difference is that in this example material parameters are added to the settings, which is convenient for testing, so as not to create many different materials.
-
-You can find more exemples in Demo Project.  
 
 A procedural mesh is used to visualize the path.
 In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor.  
