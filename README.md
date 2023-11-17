@@ -95,8 +95,7 @@ All examples have similar code, but to improve readability, all examples were ma
 **BP_SPT_Master**
 This example is similar to the example of a regular line **BP_SPT_Line**, the difference is that in this example material parameters are added to the settings, which is convenient for testing, so as not to create many different materials.
 
-A procedural mesh is used to visualize the path.
-In the Blueprint examples, a procedural mesh component has already been added to the Simple Path Trace Actor.  
+In the Blueprint examples, a procedural mesh is used to visualize the path.
 
 ![SPT_15](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/cd60c490-3718-4a3f-aa26-8a8b7293a6ed)
   
