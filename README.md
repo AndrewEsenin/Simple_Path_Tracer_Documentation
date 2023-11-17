@@ -33,7 +33,6 @@ Before you can open the Demo Project you need to enable the plugin for your engi
 You can migrate the entire level with examples or individual examples to your project using migrate ([read more](#Migrate)).  
 
 <br />
-<br />
 
 ## Quick Start
 1. Install the plugin on your version of the engine.  
