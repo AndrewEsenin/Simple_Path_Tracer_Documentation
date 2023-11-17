@@ -35,29 +35,27 @@ You can migrate the entire level with examples or individual examples from Demo 
 <br />
 
 ## Quick Start
-1. Install the plugin on your version of the engine.  
-2. Activate the plugin (if not activated) and restart the engine.  
+1. Install the plugin on your version of the engine.    
 
 ![SPT_01](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/f9ae88e2-fff4-47d3-abbf-eb3cb51c0896)
 
 
-3. Check if the plugin is enabled from Edit > Plugins.
+2. Activate the plugin (if not activated) and restart the engine.
 
 ![SPT_04](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/acf986ee-f28b-4521-a244-b64de086a1cc)
 
 
-4. To access the Blueprint examples, do the following, 
+3. To access the Blueprint examples, do the following, 
 for UE4: 
 
 ![SPT_02](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/8f4fe1f3-083c-49a8-bb95-a917946ea68c)
 
-
-  for UE5:  
+   for UE5:  
 
 ![SPT_03](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/d7a20114-106d-4b6d-81be-c21a7ff26787)
 
 
-5. Create a "Simple Path Tracer Actor" actor, or use one of the ready-made examples.  
+4. Create a "Simple Path Tracer Actor" actor, or use one of the ready-made examples.  
 "Simple Path Tracer Actor" contains all the functions for editing and creating a path.   
 
 ![SPT_05](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5067783b-38f0-4d1b-a77f-d4a083f8d7f7)
