@@ -78,8 +78,7 @@ If you want to use Path Tracer with a sequencer, then ([read more here](#Sequenc
 
 ## Blueprint Examples  
 All main examples are located in the plugin content folder.  
-You can find more exemples in Demo Project.  
-All gameplay logic in the Demo project is located inside the Demo_Player_Controller.  
+You can find more exemples in [Demo Project](#Demo-Project).    
 
 Look at how the examples are made to create the path you need, or use a ready-made example.  
 To work in the Editor, the logic runs in the Construction Script, which is called every time the actor changes or moves (for example, when you edit a spline).  
@@ -505,6 +504,8 @@ This asset will suit you if you need a more optimized solution, for example if y
 ## Demo Project
 Demo Project (for UE versions 4.6 - 5.3)  
 link  /**/   
+
+All gameplay logic in the Demo project is located inside the Demo_Player_Controller.
 
 Before you can open the Demo Project you need to enable the plugin for your engine version ([read more](#Quick-Start)).   
 You can migrate the entire level with examples or individual examples from Demo Project to your project using migrate ([read more](#Migrate)).  
