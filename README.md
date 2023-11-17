@@ -30,7 +30,7 @@ You can download the Demo Project (for UE versions 4.6 - 5.3)
 link  /**/   
 The Demo Project contains many additional examples.  
 Before you can open the Demo Project you need to enable the plugin for your engine version ([read more](#Quick-Start)).   
-You can migrate the entire level with examples or individual examples to your project using migrate ([read more](#Migrate)).  
+You can migrate the entire level with examples or individual examples from Demo Project to your project using migrate ([read more](#Migrate)).  
 
 <br />
 
