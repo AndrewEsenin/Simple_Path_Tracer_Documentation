@@ -85,9 +85,7 @@ You can find other examples in the demo.
 All gameplay logic in the Demo project is located inside the Demo_Player_Controller.  
 
 Look at how the examples are made to create the path you need, or use a ready-made example.  
-To work in the editor, the logic runs in the Construction Script, which is called every time the actor changes or moves (for example, when you edit a spline).  
-To work during the game, the logic works in Tick in the Event Graph.  
-To work with the sequencer, all logic also works in Tick.   
+To work in the Editor, the logic runs in the Construction Script, which is called every time the actor changes or moves (for example, when you edit a spline).  
   
 Blueprints whose name starts with "BPc_" are child classes of other blueprints, there are no logic changes, only changes to the class settings (different line thickness, different materials used, etc.).    
   
