@@ -59,8 +59,8 @@ You can create your own empty actor or use one of the ready-made examples.
 
 If you want to use Path Tracer in the editor, simply drag one of the ready-made examples onto the level and edit the spline.  
 To quickly create points, hold Alt and drag:  
-![Alt](https://i.imgur.com/oEqbx9c.mp4)  
-
+![Alt](http://i.imgur.com/oEqbx9c.gif)  
+http://i.imgur.com/OUkLi.gif
 If you want to use Path Tracer at runtime, you can do the following:
 Create a new Path Tracer using the Spawn Actor from Class function, selecting one of the ready-made examples, and connect this node to the Begin Play event (for example in Player Controller).
 
@@ -73,7 +73,6 @@ Now you can, for example, draw a path from the player character to the coordinat
 If you need to draw a path along your array of points, call the Draw Path function in any of the ready-made examples in the same way and connect your array of points to this function.
 
 If you want to use Path Tracer with a sequencer, then ([read more here](#Sequencer)).   
-
 
 <br />
 <br />
