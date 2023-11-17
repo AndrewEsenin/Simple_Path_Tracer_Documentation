@@ -27,7 +27,7 @@ To draw a path, you just need an array of points.
 The Blueprint examples use an array of spline points to draw the path. 
 Spline is convenient to use to customize the appearance of the path, but the spline itself is not necessary, the path can be built through any array of points, for example, obtained as Navmesh Path or with the help of some of your algorithm.
 
-You can download the ([Demo Project](#Demo-Project)), it contains many additional examples.  
+You can download the [Demo Project](#Demo-Project), it contains many additional examples.  
 Before you can open the Demo Project you need to enable the plugin for your engine version ([read more](#Quick-Start)).   
 You can migrate the entire level with examples or individual examples from Demo Project to your project using migrate ([read more](#Migrate)).  
 
