@@ -62,8 +62,7 @@ To quickly create points, hold Alt and drag:
 
 https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/8f0863f2-b76f-4612-ae97-04b5d8c074e7
 
-
-
+<br />
 If you want to use Path Tracer at runtime, you can do the following:
 Create a new Path Tracer using the Spawn Actor from Class function, selecting one of the ready-made examples, and connect this node to the Begin Play event (for example in Player Controller).
 
