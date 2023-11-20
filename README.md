@@ -59,7 +59,10 @@ You can create your own empty actor or use one of the ready-made examples.
 
 If you want to use Path Tracer in the editor, simply drag one of the ready-made examples onto the level and edit the spline.  
 To quickly create points, hold Alt and drag:  
-![Alt](http://i.imgur.com/oEqbx9c.gif)  
+
+https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/8f0863f2-b76f-4612-ae97-04b5d8c074e7
+
+
 
 If you want to use Path Tracer at runtime, you can do the following:
 Create a new Path Tracer using the Spawn Actor from Class function, selecting one of the ready-made examples, and connect this node to the Begin Play event (for example in Player Controller).
