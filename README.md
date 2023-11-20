@@ -64,7 +64,7 @@ https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/15037421
 
 <br />
 If you want to use Path Tracer at runtime, you can do the following:
-Create a new Path Tracer using the Spawn Actor from Class function, selecting one of the ready-made examples, and connect this node to the Begin Play event (for example in Player Controller).
+Create a new Path Tracer using the Spawn Actor from Class function, selecting one of the ready-made examples, and connect this node to the Begin Play event (for example in Player Controller).  
 
 ![SPT_20](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/9192f9dc-d16d-4781-a9d2-f3fa75a39bed)
 
