@@ -458,6 +458,8 @@ Materials can cause similar artifacts, when part of the texture from one side be
 This is due to texture repeating, you can turn it off in the texture settings, but the texture will no longer tile.  
   
 ![SPT_14](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/01797c37-5c8e-4946-af62-c761602993fd)
+  
+<br />  
 
 ### Shaded Visible Through Objects  
 This effect will only work with materials switched to Masked or Opaque mode.  
@@ -482,7 +484,7 @@ In Post Process Volume settings find “Post Process Materials”, add an elemen
 
 ![SPT_30](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5875d9cc-886a-48c5-9795-68710b26cbca)
 
-and place the MI_PT_PostProces material in the slot  
+and place the **M_SPT_Post_Process** material in the slot  
 
 ![SPT_31](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5f47ec57-0e15-4c1c-b305-ff560b3a2dcc)
 
@@ -490,7 +492,7 @@ Now, select mesh or procedural mesh and following these steps:
 
 ![SPT_32](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5264cb6a-90f5-4f19-9bee-eb7089c955d1)
 
-In the MI_PT_PostProcess settings, you can also change the fill texture or shading color:  
+You can also change the fill texture or shading color:  
 
 ![SPT_33](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/b3c39d97-2e1b-4754-a99a-01dc3a992006)
 
@@ -534,8 +536,8 @@ Performance is directly related to the number of points in your array.
 So the sequence of function calls matters, for example it is better to trim the path first and then round the corners.   
 The sequence of functions also affects how it will look, experiment, just keep in mind that functions that add a lot of points are better called last.  
 
-### SPT is designed to draw the path mainly in 2D
-The plugin can draw in 3D, but there are some peculiarities.    
+### SPT is designed to draw the path mainly in 2D  
+The plugin can draw in 3D, but there are some peculiarities.     
 If the path points are evenly spaced (X and Y coordinates are the same) a section of the path may not be displayed or may be rotated incorrectly, to solve this problem there is a function "Fix Vertical Path Points", it automatically adds an adjustable indentation along the path to avoid this problem.    
 If you want to draw something in a different plane, you can draw a horizontal path and then just rotate the entire actor itself to the plane you want.    
 
