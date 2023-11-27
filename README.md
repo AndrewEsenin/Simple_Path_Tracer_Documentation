@@ -474,7 +474,26 @@ You can migrate assets from the Demo Project to your project as follows:
 3. Select your project "Content" folder.  
   
 <br />
-  
+
+### Sequencer
+To work with the sequencer, look at the example BP_SPT_Sequencer which is located in the demo level.  
+
+![SPT_23](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/642c2860-12ee-4c56-aee5-04496ea1adbb)
+
+To make another Path Tracer work with the sequencer, you need to enable "Run Construction Script in Sequencer" in the Class Settings of the Path Tracer Blueprint to have the animation play in the sequencer.  
+
+To be able to animate a variable in the sequencer, you need to enable the "Expose to Cinematics" setting for it.  
+
+![SPT_24](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/d0878acc-0489-4b63-a894-c70026d76f03)
+
+Open the sequencer file SQ_Example, and select the track you want to animate.  
+
+![SPT_25](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/bfbbea22-7bc8-420a-9379-526500e31ec7)
+
+After this, you can open the Sequencer Master, which is located in the level, set up the camera and render the video.  
+
+<br />
+
 **Performance**
 Performance is directly related to the number of points in your array.  
 So the sequence of function calls matters, for example it is better to trim the path first and then round the corners.   
