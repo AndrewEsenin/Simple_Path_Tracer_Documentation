@@ -551,11 +551,14 @@ If necessary you can bake the path into a single mesh, this is a much more produ
 
 If, in addition to the procedural mesh, you use static meshes, after baking, you can once again merge everything together using Merge Actors (Window > Developer Tools).  
 
-### Working with arrays 
+### Working with arrays  
+
+![SPT_36](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/c718ffe3-4f05-4ad3-938f-37e09d8a699b)
+
 You can also use Unreal functions to work with arrays.
-For example the Reverse function will reverse the order of the points, this can be useful if it is important at which end of the path the path starts to be drawn (for example, if you want the path to remain static when the character moves along it).
-The Remove Index function will help you to remove, for example, the first or the last point of the path, it can be useful if for some reason you don't need these points or they are in the way.
-The "Get Vector Array Average" function will help you find the geometric center among all your points.
+For example the **Reverse** function will reverse the order of the points, this can be useful if it is important at which end of the path the path starts to be drawn (for example, if you want the path to remain static when the character moves along it).
+The **Remove Index** function will help you to remove, for example, the first or the last point of the path, it can be useful if for some reason you don't need these points or they are in the way.
+The **Get Vector Array Average** function will help you find the geometric center among all your points.
 
 ### Path Tracer Toolkit  
 You can also check out my other аsset [Path Tracer Toolkit](https://www.unrealengine.com/marketplace/en-US/product/e0b473825d50400f8a7b298408940333)  
