@@ -101,8 +101,7 @@ You can combine different examples together to get the path you want.
 | **Blueprint** | **Description**  |                                                       
 |---------------|------------------|
 | **BP_SPT_Master** | This example is identical to the **BP_SPT_Line**, the difference is that here the material parameters are included in the settings. It is useful for testing so as not to create a large amount of materials. |
-| **BP_SPT_Line_Runtime** | An example to use during the game. It is used in the Demo when drawing a path between the character and the cursor.
-Just call the Draw Path function. |
+| **BP_SPT_Line_Runtime** | An example to use during the game. It is used in the Demo when drawing a path between the character and the cursor. Just call the Draw Path function. |
 | **BP_SPT_Sequencer** | Example configured for use with a sequencer. |
 | **BP_SPT_Line** | An example of a simple path, you can adjust the thickness, corner rounding and start and end of the line. |
 | **BP_SPT_Curve** | This example follows the spline exactly, creating polygons across the specified distance. You can edit a spline using tangents. |
