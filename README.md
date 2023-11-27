@@ -95,23 +95,30 @@ To find the parent blueprint, open it and click in the upper right corner:
 ### Description  
 All examples have similar code, but to improve readability, all examples were made in separate classes.  
 
+The examples are created simply as part of the tutorial.  
+You can combine different examples together to get the path you want.  
+
 | **Blueprint** | **Description**  |                                                       
 |---------------|------------------|
 | **BP_SPT_Master** | This example is identical to the **BP_SPT_Line**, the difference is that here the material parameters are included in the settings. It is useful for testing so as not to create a large amount of materials. |
-| **BP_SPT_Line_Runtime** |  |
-| **BP_SPT_Sequencer** |  |
-| **BP_SPT_Line** |  |
-| **BP_SPT_Curve** |  |
-| **BP_SPT_Dotted** |  |
-| **BP_SPT_Corners_Offset** |  |
-| **BP_SPT_Line_Colored** |  |
-| **BP_SPT_Line_Cross** |  |
-| **BP_SPT_Line_Vertex_Color** |  |
-| **BP_SPT_Line_Opacity** |  |
-| **BP_SPT_Line_Vertical** |  |
-| **BP_SPT_Border** |  |
-| **BP_SPT_Border_Cross** |  |
-| **BP_SPT_Border_Curve** |  |
+| **BP_SPT_Line_Runtime** | An example to use during the game. It is used in the Demo when drawing a path between the character and the cursor.
+Just call the Draw Path function. |
+| **BP_SPT_Sequencer** | Example configured for use with a sequencer. |
+| **BP_SPT_Line** | An example of a simple path, you can adjust the thickness, corner rounding and start and end of the line. |
+| **BP_SPT_Curve** | This example follows the spline exactly, creating polygons across the specified distance. You can edit a spline using tangents. |
+| **BP_SPT_Dotted** | Polygons of specified sizes are created along the path, to which a unique texture can be applied. |
+| **BP_SPT_Corners_Offset** | In this example, you can add indents in the corners of the path, as well as add your own unique mesh to the corners. |
+| **BP_SPT_Line_Colored** | You can make multiple segments in one path, each segment can have its own material. |
+| **BP_SPT_Line_Cross** | Two paths connected together, horizontal and vertical, can be adjusted to offset them relative to each other. |
+| **BP_SPT_Line_Vertex_Color** | A vertex-colored path uses color gradients. The UnitCurve parameter determines how the gradient will be applied.
+If True, then gradient values from 0 to 1 will be used, the beginning of the path will be colored with a gradient value of zero, the end of the path will be colored with a gradient value of one.
+If False, the distance of the vertex from the beginning of the path will be related to the gradient value. For example, if the vertex is 5000 units away from the beginning of the path, the gradient will take the X-axis value of 5000. You can change the gradient values at runtime, thus recoloring the path at some coordinates. |
+| **BP_SPT_Line_Opacity** | An alternative version of transparency. It differs from **BP_SPT_Line_Vertex_Color** in that smooth transition transparency can be applied to the start and end of the path.
+But if the beginning or end of a path is close to other parts of the path, those parts will also become transparent. |
+| **BP_SPT_Line_Vertical** | Simple vertical path. |
+| **BP_SPT_Border** | A simple closed path, the start and end planes of the path have been removed. |
+| **BP_SPT_Border_Cross** | Borders from two paths, vertical and horizontal, can be assigned their own material and offset. |
+| **BP_SPT_Border_Curve** | The boundaries exactly follow the curve, the spline can be changed using tangents. |
 
 In the Blueprint examples, a procedural mesh is used to visualize the path.
 
