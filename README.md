@@ -521,7 +521,7 @@ The Remove Index function will help you to remove, for example, the first or the
 The "Get Vector Array Average" function will help you find the geometric center among all your points.
 
 ### Path Tracer Toolkit  
-You can also check out my other аsset [Path Tracer Toolkit](https://www.unrealengine.com/marketplace/en-US/product/e0b473825d50400f8a7b298408940333)
+You can also check out my other аsset [Path Tracer Toolkit](https://www.unrealengine.com/marketplace/en-US/product/e0b473825d50400f8a7b298408940333)  
 Path Tracer Toolkit is a 100% blueprint asset, and more focused on visual style, while this asset is more focused on optimization and customization.  
 This asset will suit you if you need a more optimized solution, for example if you need to draw many paths or with many points.  
   
