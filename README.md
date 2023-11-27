@@ -458,7 +458,42 @@ Materials can cause similar artifacts, when part of the texture from one side be
 This is due to texture repeating, you can turn it off in the texture settings, but the texture will no longer tile.  
   
 ![SPT_14](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/01797c37-5c8e-4946-af62-c761602993fd)
-  
+
+### Shaded Visible Through Objects  
+This effect will only work with materials switched to Masked or Opaque mode.  
+
+![SPT_27](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/821953be-a4f0-4952-a83c-2b6d40ef2af3)
+
+In order for this kind of effect to work in your project, you need to:  
+
+In Project Settings, in postprocessing, set “Custom Depth-Stencil Pass” to “Enabled with Stencil”   
+
+![SPT_34](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/a049f151-08b9-4a9f-868a-fa4045800511)
+
+Place Post Process Volume in your scene  
+
+![SPT_28](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/427e0bf6-3256-43a1-8a28-d87c954ed7a1)
+
+Check the “Infinite Extent” in Post Process Volume  
+
+![SPT_29](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/f22c7aaf-9ffa-4550-87b1-e7d392271fb5)
+
+In Post Process Volume settings find “Post Process Materials”, add an element to array (Plus sign), select “Asset reference”  
+
+![SPT_30](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5875d9cc-886a-48c5-9795-68710b26cbca)
+
+and place the MI_PT_PostProces material in the slot  
+
+![SPT_31](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5f47ec57-0e15-4c1c-b305-ff560b3a2dcc)
+
+Now, select mesh or procedural mesh and following these steps:  
+
+![SPT_32](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/5264cb6a-90f5-4f19-9bee-eb7089c955d1)
+
+In the MI_PT_PostProcess settings, you can also change the fill texture or shading color:  
+
+![SPT_33](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/b3c39d97-2e1b-4754-a99a-01dc3a992006)
+
   
 <br />
 <br />
