@@ -501,7 +501,7 @@ You can also change the fill texture or shading color:
 <br />
 
 ## Features and Tips  
-## Migrate  
+### Migrate  
 You can migrate assets from the Demo Project to your project as follows:  
 1. Select the necessary assets.  
 2. Select Migrate, all dependent assets that will also need to be migrated will be marked here. 
