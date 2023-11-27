@@ -98,9 +98,20 @@ All examples have similar code, but to improve readability, all examples were ma
 | **Blueprint** | **Description**  |                                                       
 |---------------|------------------|
 | **BP_SPT_Master** | This example is identical to the **BP_SPT_Line**, the difference is that here the material parameters are included in the settings. It is useful for testing so as not to create a large amount of materials. |
-|  |  |
-|  |  |
-|  |  |
+| **BP_SPT_Line_Runtime** |  |
+| **BP_SPT_Sequencer** |  |
+| **BP_SPT_Line** |  |
+| **BP_SPT_Curve** |  |
+| **BP_SPT_Dotted** |  |
+| **BP_SPT_Corners_Offset** |  |
+| **BP_SPT_Line_Colored** |  |
+| **BP_SPT_Line_Cross** |  |
+| **BP_SPT_Line_Vertex_Color** |  |
+| **BP_SPT_Line_Opacity** |  |
+| **BP_SPT_Line_Vertical** |  |
+| **BP_SPT_Border** |  |
+| **BP_SPT_Border_Cross** |  |
+| **BP_SPT_Border_Curve** |  |
 
 In the Blueprint examples, a procedural mesh is used to visualize the path.
 
@@ -159,8 +170,6 @@ Seams can also appear if you have a Scale UV in the material other than 1, if yo
 
 ## Functions Description  
 The plugin includes a total of 32 functions, below is a brief description and examples of use.
-
-Add functions screen /**/  
 
 **Description of common parameters:**    
 | **Parameter** | **Description**  |                                                                                   
