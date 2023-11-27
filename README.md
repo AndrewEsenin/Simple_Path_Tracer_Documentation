@@ -494,34 +494,34 @@ After this, you can open the Sequencer Master, which is located in the level, se
 
 <br />
 
-**Performance**
+### Performance   
 Performance is directly related to the number of points in your array.  
 So the sequence of function calls matters, for example it is better to trim the path first and then round the corners.   
 The sequence of functions also affects how it will look, experiment, just keep in mind that functions that add a lot of points are better called last.  
 
-**SPT is designed to draw the path mainly in 2D**  
+### SPT is designed to draw the path mainly in 2D
 The plugin can draw in 3D, but there are some peculiarities.    
 If the path points are evenly spaced (X and Y coordinates are the same) a section of the path may not be displayed or may be rotated incorrectly, to solve this problem there is a function "Fix Vertical Path Points", it automatically adds an adjustable indentation along the path to avoid this problem.    
 If you want to draw something in a different plane, you can draw a horizontal path and then just rotate the entire actor itself to the plane you want.    
 
-**Disappearing path segments**  
+### Disappearing path segments   
 If a segment of the path is not displayed, it is likely that you have two consecutive points that have the same or very close coordinates.  
 You can fix this by using the Merge Waypoints function, which finds and removes duplicate points.   
 
-**Creation Static Mesh**  
+### Creation Static Mesh  
 If necessary you can bake the path into a single mesh, this is a much more productive solution if you want to use SPT as static objects spaced out by the drop.
 There are 2 main ways to bake a path. 
 First way, you can do it through the engine function, just run for UE4: for UE5:
 The second way will bake only the path itself, without start and end placeholders, just select the SPT actor on the scene, select the procedural mesh, in its settings click and "Create Static Mesh" and choose where to save
 
-**Working with arrays**   
+### Working with arrays 
 You can also use Unreal functions to work with arrays.
 For example the Reverse function will reverse the order of the points, this can be useful if it is important at which end of the path the path starts to be drawn (for example, if you want the path to remain static when the character moves along it).
 The Remove Index function will help you to remove, for example, the first or the last point of the path, it can be useful if for some reason you don't need these points or they are in the way.
 The "Get Vector Array Average" function will help you find the geometric center among all your points.
 
-**Path Tracer Toolkit**  
-You can also check out my other Path Tracer Toolkit Asset (link)  /**/  
+### Path Tracer Toolkit  
+You can also check out my other аsset [Path Tracer Toolkit](https://www.unrealengine.com/marketplace/en-US/product/e0b473825d50400f8a7b298408940333)
 Path Tracer Toolkit is a 100% blueprint asset, and more focused on visual style, while this asset is more focused on optimization and customization.  
 This asset will suit you if you need a more optimized solution, for example if you need to draw many paths or with many points.  
   
