@@ -501,7 +501,7 @@ You can also change the fill texture or shading color:
 <br />
 
 ## Features and Tips  
-### Migrate  
+## Migrate  
 You can migrate assets from the Demo Project to your project as follows:  
 1. Select the necessary assets.  
 2. Select Migrate, all dependent assets that will also need to be migrated will be marked here. 
@@ -512,7 +512,7 @@ You can migrate assets from the Demo Project to your project as follows:
   
 <br />
 
-### Sequencer
+## Sequencer
 To work with the sequencer, look at the example BP_SPT_Sequencer which is located in the demo level.  
 
 ![SPT_23](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/642c2860-12ee-4c56-aee5-04496ea1adbb)
