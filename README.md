@@ -110,11 +110,8 @@ Just call the Draw Path function. |
 | **BP_SPT_Corners_Offset** | In this example, you can add indents in the corners of the path, as well as add your own unique mesh to the corners. |
 | **BP_SPT_Line_Colored** | You can make multiple segments in one path, each segment can have its own material. |
 | **BP_SPT_Line_Cross** | Two paths connected together, horizontal and vertical, can be adjusted to offset them relative to each other. |
-| **BP_SPT_Line_Vertex_Color** | A vertex-colored path uses color gradients. The UnitCurve parameter determines how the gradient will be applied.
-If True, then gradient values from 0 to 1 will be used, the beginning of the path will be colored with a gradient value of zero, the end of the path will be colored with a gradient value of one.
-If False, the distance of the vertex from the beginning of the path will be related to the gradient value. For example, if the vertex is 5000 units away from the beginning of the path, the gradient will take the X-axis value of 5000. You can change the gradient values at runtime, thus recoloring the path at some coordinates. |
-| **BP_SPT_Line_Opacity** | An alternative version of transparency. It differs from **BP_SPT_Line_Vertex_Color** in that smooth transition transparency can be applied to the start and end of the path.
-But if the beginning or end of a path is close to other parts of the path, those parts will also become transparent. |
+| **BP_SPT_Line_Vertex_Color** | A vertex-colored path uses color gradients. The UnitCurve parameter determines how the gradient will be applied. If True, then gradient values from 0 to 1 will be used, the beginning of the path will be colored with a gradient value of zero, the end of the path will be colored with a gradient value of one. If False, the distance of the vertex from the beginning of the path will be related to the gradient value. For example, if the vertex is 5000 units away from the beginning of the path, the gradient will take the X-axis value of 5000. You can change the gradient values at runtime, thus recoloring the path at some coordinates. |
+| **BP_SPT_Line_Opacity** | An alternative version of transparency. It differs from **BP_SPT_Line_Vertex_Color** in that smooth transition transparency can be applied to the start and end of the path. But if the beginning or end of a path is close to other parts of the path, those parts will also become transparent. |
 | **BP_SPT_Line_Vertical** | Simple vertical path. |
 | **BP_SPT_Border** | A simple closed path, the start and end planes of the path have been removed. |
 | **BP_SPT_Border_Cross** | Borders from two paths, vertical and horizontal, can be assigned their own material and offset. |
