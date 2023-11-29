@@ -342,8 +342,8 @@ Adds two points at a given distance to each corner of the path, the corner point
 <br />
 
 **CombinePathsData**  
-Properly merges the vertexes, triangles, and UV coordinates of two paths.  
- To avoid creating two procedural meshes, or to avoid creating two sections of a procedural meshes, you can merge the datum. Or to use the same material or to reduce the number of drogues.  
+Correctly merges the vertexes, triangles, and UV coordinates of two paths.  
+To avoid creating two procedural meshes, or to avoid creating two sections of a procedural meshes, you can merge the datum. Or to use the same material or to reduce the number of drogues.  
 
 <br />
 
