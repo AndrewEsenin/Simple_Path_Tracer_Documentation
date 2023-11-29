@@ -177,15 +177,15 @@ The plugin includes a total of 32 functions, below is a brief description and ex
 **Description of common parameters:**    
 | **Parameter** | **Description**  |                                                                                   
 |---------------|------------------|
-| PathPoints | Array of path points. |
-| bLoopPath | Loops the path. |
+| Path Points | Array of path points. |
+| Loop Path | Loops the path. |
 | Thickness | Half of the line thickness. |
 | Offset | Offset vertexes from the center, offset works even if the path is not closed. |
-| bEnableUV | Enables UV creation, enable if you want a unique texture on the meshes of your path, not just a color. |
-| ScaleUV | Scale UV on two axes, use to, for example, make dashes more frequent or sparse. |
-| OffsetUV | Shifts the UV, use to move the texture to the side or away from the center of the path meshes. |
-| bRemoveSeamsOnUV | Removes texture seams between polygons. |
-| bRectangularUV | Makes the UV of each polygon rectangular, if false UV will match the shape of the polygon. |
+| Enable UV | Enables UV creation, enable if you want a unique texture on the meshes of your path, not just a color. |
+| Scale UV | Scale UV on two axes, use to, for example, make dashes more frequent or sparse. |
+| Offset UV | Shifts the UV, use to move the texture to the side or away from the center of the path meshes. |
+| Remove Seams On UV | Removes texture seams between polygons. |
+| Rectangular UV | Makes the UV of each polygon rectangular, if false UV will match the shape of the polygon. |
 
 <br />
 
