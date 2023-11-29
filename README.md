@@ -357,6 +357,11 @@ Trims the points at the end of the path by the specified distance.
 
 <br />
 
+**TrimPathComplex**  
+Cuts the path on both sides.  
+
+<br />
+
 **RemoveSmallSegmentsCloseToEnd**  
 Deletes all closely spaced points that are at the end of the path.  
 Can be used to accurately position the end of the path.  
@@ -366,11 +371,6 @@ Can be used to accurately position the end of the path.
 **RemoveSmallSegmentsCloseToBothEnds**  
 Removes all closely spaced points located on both sides of the path.  
 Can be used to accurately position track ends.  
-
-<br />
-
-**TrimPathComplex**  
-Cuts the path on both sides.  
 
 <br />
 
