@@ -348,7 +348,7 @@ Useful if you want to avoid creating multiple procedural meshes or creating mult
 <br />
 
 **TrimPathFromStart**  
-Cuts the beginning of the path by the specified distance.  
+Trims the beginning of the path by the specified distance.  
 
 <br />
 
@@ -358,7 +358,7 @@ Trims the points at the end of the path by the specified distance.
 <br />
 
 **TrimPathComplex**  
-Cuts the path on both sides.  
+Trims the path on both sides.  
 
 <br />
 
