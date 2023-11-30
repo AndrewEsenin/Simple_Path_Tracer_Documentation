@@ -172,7 +172,8 @@ Seams can also appear if you have a Scale UV in the material other than 1, if yo
 <br />
 
 ## Functions Description  
-The plugin includes a total of 32 functions, below is a brief description and examples of use.
+The plugin includes a total of 32 functions.   
+In the [Demo Project](#Demo-Project) you can find usage examples for all functions.  
 
 **Description of common parameters:**    
 | **Parameter** | **Description**  |                                                                                   
