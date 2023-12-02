@@ -408,6 +408,11 @@ Used to create a color path and transparency.
 Divides the path into two parts, at a specified distance.  
 
 <br />
+
+**CheckIfPointLiesInsideArea**
+Checks whether a point is inside an area or not, in 2D.  
+
+<br />
 <br />
 
 ## Materials  
