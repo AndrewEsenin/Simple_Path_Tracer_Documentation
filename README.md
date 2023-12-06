@@ -3,7 +3,7 @@
 Unreal Marketplace Link:   
 YouTube:  
 Support email: andrewesenin27@gmail.com  
-Demo Project:  
+Example Project:  
 Playble Demo: https://drive.google.com/file/d/1xHXlC4KEAp8EJPlczoIN_V-BDqFOXoKL/view?usp=sharing  
   
 <br />
@@ -15,7 +15,7 @@ Playble Demo: https://drive.google.com/file/d/1xHXlC4KEAp8EJPlczoIN_V-BDqFOXoKL/
 * [Functions Description](#Functions-Description)
 * [Materials](#Materials)
 * [Features and Tips](#Features-and-Tips)
-* [Demo Project](#Demo-Project)
+* [Example Project](#Example-Project)
 <!--te-->
 
 <br />
@@ -30,7 +30,7 @@ To draw a path, you just need an array of points.
 The Blueprint examples use an array of spline points to draw the path. 
 Spline is convenient to use to customize the appearance of the path, but the spline itself is not necessary, the path can be built through any array of points, for example, obtained as Navmesh Path or with the help of some of your algorithm.
 
-You can download the [Demo Project](#Demo-Project), it contains many additional examples.  
+You can download the [Example Project](#Example-Project), it contains many additional examples.  
 
 <br />
 
@@ -84,7 +84,7 @@ If you want to use Path Tracer with a sequencer, then ([read more here](#Sequenc
 
 ## Blueprint Examples  
 All main examples are located in the plugin content folder.  
-You can find more exemples in [Demo Project](#Demo-Project).    
+You can find more exemples in [Example Project](#Example-Project).    
 
 Look at how the examples are made to create the path you need, or use a ready-made example.  
 To work in the Editor, the logic runs in the Construction Script, which is called every time the actor changes or moves (for example, when you edit a spline).  
@@ -176,7 +176,7 @@ Seams can also appear if you have a Scale UV in the material other than 1, if yo
 
 ## Functions Description  
 The plugin includes a total of 32 functions.   
-In the [Demo Project](#Demo-Project) you can find usage examples for all functions.  
+In the [Example Project](#Example-Project) you can find usage examples for all functions.  
 
 **Description of common parameters:**    
 | **Parameter** | **Description**  |                                                                                   
@@ -523,7 +523,7 @@ You can also change the fill texture or shading color:
 
 ## Features and Tips  
 ### Migrate  
-You can migrate assets from the Demo Project to your project as follows:  
+You can migrate assets from the Example Project to your project as follows:  
 1. Select the necessary assets.  
 2. Select Migrate, all dependent assets that will also need to be migrated will be marked here. 
     
@@ -588,11 +588,11 @@ Path Tracer Toolkit is a 100% blueprint asset, and more focused on visual style,
 <br />
 <br />
 
-## Demo Project
-Demo Project (for UE versions 4.6 - 5.3)  
+## Example Project
+Example Project (for UE versions 4.6 - 5.3)  
 link  /**/   
 
-All gameplay logic in the Demo project is located inside the Demo_Player_Controller.
+All gameplay logic in the Example Project is located inside the Demo_Player_Controller.
 
-Before you can open the Demo Project you need to enable the plugin for your engine version ([read more](#Quick-Start)).   
-You can migrate the entire level with examples or individual examples from Demo Project to your project using migrate ([read more](#Migrate)).  
+Before you can open the Example Project you need to enable the plugin for your engine version ([read more](#Quick-Start)).   
+You can migrate the entire level with examples or individual examples from Example Project to your project using migrate ([read more](#Migrate)).  
