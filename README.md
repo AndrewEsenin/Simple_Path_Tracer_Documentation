@@ -42,7 +42,7 @@ You can download the [Example Project](#Example-Project), it contains many addit
 
 2. Activate the plugin (if not activated) and restart the engine.
 
-![SPT_04](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/acf986ee-f28b-4521-a244-b64de086a1cc)
+![SPT_38](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/058ea1ff-efce-46ca-974b-7182587adee2)
 
 
 3. To access the Blueprint examples, do the following, 
