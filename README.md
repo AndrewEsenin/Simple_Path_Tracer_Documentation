@@ -177,7 +177,7 @@ Seams can also appear if you have a Scale UV in the material other than 1, if yo
 ## Functions Description  
 The plugin includes a total of 32 functions.   
 In the [Example Project](#Example-Project) you can find usage examples for all functions.  
-All functions are in the "Simple Path Tracer" section.  
+All functions are located in the "Simple Path Tracer" section.  
 
 ![SPT_39](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/95f0335a-2380-4f32-b25c-1e869853f56a)
 
