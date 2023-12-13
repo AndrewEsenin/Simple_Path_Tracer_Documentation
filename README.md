@@ -448,7 +448,7 @@ All other materials are instances of these 3 materials.
 The animation parameters are responsible for the movement or scaling of the texture, see how you can use these parameters in examples of materials with animations.  
   
   
-To increase the brightness of the glow, you can increase this value when changing the color of the material or adjust the Emmisive values   
+To increase the brightness of the glow, you can increase this value when changing the color of the material or adjust the Emissive values   
 (Also, the brightness of the glow may depend on the post-processing settings)  
   
 ![SPT_11](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/42d25663-759b-4d3b-9ea5-1512e1cb2d2a)  
