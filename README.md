@@ -563,7 +563,7 @@ If you want to draw something in a different plane, you can draw a horizontal pa
 
 ### Disappearing path segments   
 If a segment of the path is not displayed, it is likely that you have two consecutive points that have the same or very close coordinates.  
-You can fix this by using the Merge Waypoints function, which finds and removes duplicate points.   
+You can fix this by using the Merge Path Points function, which finds and removes duplicate points.   
 
 ### Creation Static Mesh  
 If necessary you can bake the path into a single mesh, this is a much more productive solution if you want to use SPT as static object.
