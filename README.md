@@ -1,9 +1,9 @@
 # Simple Path Tracer Documentation
 
 Unreal Marketplace Link:   
-YouTube:  
+YouTube:  https://youtu.be/cwlsk4oWINE  
 Support email: andrewesenin27@gmail.com  
-Example Project:  
+Example Project:  https://drive.google.com/file/d/13QwIDGdeg9HQX6rnMeqzv9r1sjdD7Klz/view?usp=sharing  
 Playable Demo: https://drive.google.com/file/d/1xHXlC4KEAp8EJPlczoIN_V-BDqFOXoKL/view?usp=sharing  
   
 <br />
