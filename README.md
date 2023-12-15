@@ -25,7 +25,7 @@ Simple Path Tracer is a C++ Plugin containing a set of functions for editing and
 The plugin also includes ready blueprint examples that show how the plugin functions can be used.  
 The plugin source code is also included in the asset.  
 
-To draw a path, you just need an array of points.
+To draw a path, you just need an array of points.  
 ![SPT_40](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/a6fcdd12-e9df-4876-ba40-f5010467fdf5)  
 
 The Blueprint examples use an array of spline points to draw the path. 
