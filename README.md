@@ -593,7 +593,7 @@ Path Tracer Toolkit is a 100% blueprint asset, and more focused on visual style,
 
 ## Example Project
 Example Project (for UE versions 4.6 - 5.3)  
-link  /**/   
+link  https://drive.google.com/file/d/13QwIDGdeg9HQX6rnMeqzv9r1sjdD7Klz/view?usp=sharing    
 
 All gameplay logic in the Example Project is located inside the Demo_Player_Controller.
 
