@@ -26,6 +26,7 @@ The plugin also includes ready blueprint examples that show how the plugin funct
 The plugin source code is also included in the asset.  
 
 To draw a path, you just need an array of points.
+![SPT_40](https://github.com/AndrewEsenin/Simple_Path_Tracer_Documentation/assets/150374215/a6fcdd12-e9df-4876-ba40-f5010467fdf5)  
 
 The Blueprint examples use an array of spline points to draw the path. 
 Spline is convenient to use to customize the appearance of the path, but the spline itself is not necessary, the path can be built through any array of points, for example, obtained as Navmesh Path or with the help of some of your algorithm.
