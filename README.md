@@ -255,6 +255,7 @@ The Radius parameter determines the strength of the rounding, and the Segments p
 With Segments = 1 it works like a chamfer, just cutting corners, Segments = 8-16 is enough to make smooth and rounded corners.  
 It is also handy to use with a small Radius and a value of 1 for Segments to trim very long sharp corners that can occur with sharp path turns.  
 bLoopPath in this case looping means that two rounded corners will be added between the first and last point of the path.  
+The "3D Path" variable turns on the rounding of vertical corners.
 
 <br />
 
