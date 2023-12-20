@@ -606,10 +606,10 @@ You can migrate the entire level with examples or individual examples from Examp
 <br />
 
 ## Changelog
-
 ### V1.1  
-**Fixed:** 
-  Fixed a crash with negative values of the Segments parameter of the RoundingPathCorners function.
+**Fixed:**  
+Fixed a crash with negative values of the Segments parameter of the RoundingPathCorners function.  
 
 **Added:**  
-Added the “3D Path” parameter to the RoundingPathCorners function; Now the function can round corners not only horizontally, but also vertically.
+Added the “3D Path” parameter to the RoundingPathCorners function;   
+Now the function can round corners not only horizontally, but also vertically.  
