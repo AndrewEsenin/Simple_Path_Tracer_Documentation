@@ -16,6 +16,7 @@ Playable Demo: https://drive.google.com/file/d/1xHXlC4KEAp8EJPlczoIN_V-BDqFOXoKL
 * [Materials](#Materials)
 * [Features and Tips](#Features-and-Tips)
 * [Example Project](#Example-Project)
+* [Changelog](#Changelog)
 <!--te-->
 
 <br />
@@ -600,3 +601,15 @@ All gameplay logic in the Example Project is located inside the Demo_Player_Cont
 
 Before you can open the Example Project you need to enable the plugin for your engine version ([read more](#Quick-Start)).   
 You can migrate the entire level with examples or individual examples from Example Project to your project using migrate ([read more](#Migrate)).  
+  
+<br />
+<br />
+
+## Changelog
+
+### V1.1  
+**Fixed:** 
+  Fixed a crash with negative values of the Segments parameter of the RoundingPathCorners function.
+
+**Added:**  
+Added the “3D Path” parameter to the RoundingPathCorners function; Now the function can round corners not only horizontally, but also vertically.
