@@ -564,7 +564,7 @@ So the sequence of function calls matters, for example it is better to trim the 
 The sequence of functions also affects how it will look, experiment, just keep in mind that functions that add a lot of points are better called last.  
 
 ### The Simple Path Tracer is designed primarily for use in a horizontal position
-If the waypoints are located on top of each other (the X and Y coordinates are the same) the path section may not be displayed or may not be rotated correctly, to solve this problem there is a function called “Fix Vertical Waypoints”, it automatically adds an adjustable offset along the path to avoid this problem.
+If the Points are located on top of each other (the X and Y coordinates are the same) the path section may not be displayed or may not be rotated correctly, to solve this problem there is a function called “FixVerticalPathPoints”, it automatically adds an adjustable offset along the path to avoid this problem.
 If you want to draw something in a different plane, you can draw a horizontal path and then just rotate the entire actor itself to the plane you want.    
 
 ### Disappearing path segments   
