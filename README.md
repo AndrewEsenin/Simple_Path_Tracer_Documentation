@@ -610,8 +610,8 @@ You can migrate the entire level with examples or individual examples from Examp
 ## Changelog
 ### V1.1.2  
 **Added:**  
-Added plugin versions for 4.27 and 5.0.
-Added "Surface Projection Example" to the Example Project.
+Added plugin versions for 4.27 and 5.0.  
+Added "Surface Projection Example" to the Example Project.  
 
 <br />
 
