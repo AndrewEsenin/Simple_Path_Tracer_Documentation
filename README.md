@@ -608,6 +608,13 @@ You can migrate the entire level with examples or individual examples from Examp
 <br />
 
 ## Changelog
+### V1.1.2  
+**Added:**  
+Added plugin versions for 4.27 and 5.0.
+Added "Surface Projection Example" to the Example Project.
+
+<br />
+
 ### V1.1  
 **Fixed:**  
 Fixed a crash with negative values of the Segments parameter of the RoundingPathCorners function.  
